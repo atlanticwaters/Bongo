@@ -3,81 +3,81 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1000001000000000000001 /* LiquidGlassSandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000001 /* LiquidGlassSandboxApp.swift */; };
-		A1000002000000000000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002000000000000001 /* ContentView.swift */; };
-		A1000003000000000000001 /* GlassComponentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000003000000000000001 /* GlassComponentsView.swift */; };
-		A1000004000000000000001 /* AdaptiveUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000004000000000000001 /* AdaptiveUIView.swift */; };
-		A1000005000000000000001 /* DynamicBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000005000000000000001 /* DynamicBlurView.swift */; };
-		A1000006000000000000001 /* InteractiveGlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000006000000000000001 /* InteractiveGlassView.swift */; };
-		A1000007000000000000001 /* ColorAndGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000007000000000000001 /* ColorAndGradientView.swift */; };
-		A1000008000000000000001 /* DesignSystemGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000008000000000000001 /* DesignSystemGlobal.swift */; };
-		A1000009000000000000001 /* DesignSystemLightLarge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000009000000000000001 /* DesignSystemLightLarge.swift */; };
-		A1000010000000000000001 /* DesignSystemLightMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000010000000000000001 /* DesignSystemLightMedium.swift */; };
-		A1000011000000000000001 /* DesignSystemDarkLarge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000011000000000000001 /* DesignSystemDarkLarge.swift */; };
-		A1000012000000000000001 /* DesignSystemDarkMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000012000000000000001 /* DesignSystemDarkMedium.swift */; };
-		A1000013000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2000013000000000000001 /* Assets.xcassets */; };
-		A1000014000000000000001 /* LiquidGlassSandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000014000000000000001 /* LiquidGlassSandboxTests.swift */; };
-		A1000015000000000000001 /* LiquidGlassSandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000015000000000000001 /* LiquidGlassSandboxUITests.swift */; };
+		E9B0C8A1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8B1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift */; };
+		E9B0C8A2291ABC1200D34F02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8B2291ABC1200D34F02 /* ContentView.swift */; };
+		E9B0C8A3291ABC1200D34F03 /* GlassComponentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8B3291ABC1200D34F03 /* GlassComponentsView.swift */; };
+		E9B0C8A4291ABC1200D34F04 /* AdaptiveUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8B4291ABC1200D34F04 /* AdaptiveUIView.swift */; };
+		E9B0C8A5291ABC1200D34F05 /* DynamicBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8B5291ABC1200D34F05 /* DynamicBlurView.swift */; };
+		E9B0C8A6291ABC1200D34F06 /* InteractiveGlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8B6291ABC1200D34F06 /* InteractiveGlassView.swift */; };
+		E9B0C8A7291ABC1200D34F07 /* ColorAndGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8B7291ABC1200D34F07 /* ColorAndGradientView.swift */; };
+		E9B0C8A8291ABC1200D34F08 /* DesignSystemGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8B8291ABC1200D34F08 /* DesignSystemGlobal.swift */; };
+		E9B0C8A9291ABC1200D34F09 /* DesignSystemLightLarge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8B9291ABC1200D34F09 /* DesignSystemLightLarge.swift */; };
+		E9B0C8AA291ABC1200D34F0A /* DesignSystemLightMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8BA291ABC1200D34F0A /* DesignSystemLightMedium.swift */; };
+		E9B0C8AB291ABC1200D34F0B /* DesignSystemDarkLarge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8BB291ABC1200D34F0B /* DesignSystemDarkLarge.swift */; };
+		E9B0C8AC291ABC1200D34F0C /* DesignSystemDarkMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8BC291ABC1200D34F0C /* DesignSystemDarkMedium.swift */; };
+		E9B0C8AD291ABC1200D34F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9B0C8BD291ABC1200D34F0D /* Assets.xcassets */; };
+		E9B0C8AE291ABC1200D34F0E /* LiquidGlassSandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8BE291ABC1200D34F0E /* LiquidGlassSandboxTests.swift */; };
+		E9B0C8AF291ABC1200D34F0F /* LiquidGlassSandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8BF291ABC1200D34F0F /* LiquidGlassSandboxUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A3000001000000000000001 /* PBXContainerItemProxy */ = {
+		E9B0C8C1291ABC1200D34F11 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A0000001000000000000001 /* Project object */;
+			containerPortal = E9B0C8D0291ABC1200D34F00 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A4000001000000000000001;
+			remoteGlobalIDString = E9B0C8E1291ABC1200D34F21;
 			remoteInfo = LiquidGlassSandbox;
 		};
-		A3000002000000000000001 /* PBXContainerItemProxy */ = {
+		E9B0C8C2291ABC1200D34F12 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A0000001000000000000001 /* Project object */;
+			containerPortal = E9B0C8D0291ABC1200D34F00 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A4000001000000000000001;
+			remoteGlobalIDString = E9B0C8E1291ABC1200D34F21;
 			remoteInfo = LiquidGlassSandbox;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A2000001000000000000001 /* LiquidGlassSandboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassSandboxApp.swift; sourceTree = "<group>"; };
-		A2000002000000000000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A2000003000000000000001 /* GlassComponentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassComponentsView.swift; sourceTree = "<group>"; };
-		A2000004000000000000001 /* AdaptiveUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveUIView.swift; sourceTree = "<group>"; };
-		A2000005000000000000001 /* DynamicBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicBlurView.swift; sourceTree = "<group>"; };
-		A2000006000000000000001 /* InteractiveGlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveGlassView.swift; sourceTree = "<group>"; };
-		A2000007000000000000001 /* ColorAndGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAndGradientView.swift; sourceTree = "<group>"; };
-		A2000008000000000000001 /* DesignSystemGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemGlobal.swift; sourceTree = "<group>"; };
-		A2000009000000000000001 /* DesignSystemLightLarge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemLightLarge.swift; sourceTree = "<group>"; };
-		A2000010000000000000001 /* DesignSystemLightMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemLightMedium.swift; sourceTree = "<group>"; };
-		A2000011000000000000001 /* DesignSystemDarkLarge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemDarkLarge.swift; sourceTree = "<group>"; };
-		A2000012000000000000001 /* DesignSystemDarkMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemDarkMedium.swift; sourceTree = "<group>"; };
-		A2000013000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A2000014000000000000001 /* LiquidGlassSandboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassSandboxTests.swift; sourceTree = "<group>"; };
-		A2000015000000000000001 /* LiquidGlassSandboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassSandboxUITests.swift; sourceTree = "<group>"; };
-		A4000001000000000000001 /* LiquidGlassSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquidGlassSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4000002000000000000001 /* LiquidGlassSandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidGlassSandboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4000003000000000000001 /* LiquidGlassSandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidGlassSandboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B0C8B1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassSandboxApp.swift; sourceTree = "<group>"; };
+		E9B0C8B2291ABC1200D34F02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E9B0C8B3291ABC1200D34F03 /* GlassComponentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassComponentsView.swift; sourceTree = "<group>"; };
+		E9B0C8B4291ABC1200D34F04 /* AdaptiveUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveUIView.swift; sourceTree = "<group>"; };
+		E9B0C8B5291ABC1200D34F05 /* DynamicBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicBlurView.swift; sourceTree = "<group>"; };
+		E9B0C8B6291ABC1200D34F06 /* InteractiveGlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveGlassView.swift; sourceTree = "<group>"; };
+		E9B0C8B7291ABC1200D34F07 /* ColorAndGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAndGradientView.swift; sourceTree = "<group>"; };
+		E9B0C8B8291ABC1200D34F08 /* DesignSystemGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemGlobal.swift; sourceTree = "<group>"; };
+		E9B0C8B9291ABC1200D34F09 /* DesignSystemLightLarge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemLightLarge.swift; sourceTree = "<group>"; };
+		E9B0C8BA291ABC1200D34F0A /* DesignSystemLightMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemLightMedium.swift; sourceTree = "<group>"; };
+		E9B0C8BB291ABC1200D34F0B /* DesignSystemDarkLarge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemDarkLarge.swift; sourceTree = "<group>"; };
+		E9B0C8BC291ABC1200D34F0C /* DesignSystemDarkMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemDarkMedium.swift; sourceTree = "<group>"; };
+		E9B0C8BD291ABC1200D34F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9B0C8BE291ABC1200D34F0E /* LiquidGlassSandboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassSandboxTests.swift; sourceTree = "<group>"; };
+		E9B0C8BF291ABC1200D34F0F /* LiquidGlassSandboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassSandboxUITests.swift; sourceTree = "<group>"; };
+		E9B0C8E1291ABC1200D34F21 /* LiquidGlassSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquidGlassSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B0C8E2291ABC1200D34F22 /* LiquidGlassSandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidGlassSandboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B0C8E3291ABC1200D34F23 /* LiquidGlassSandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidGlassSandboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A5000001000000000000001 /* Frameworks */ = {
+		E9B0C8F1291ABC1200D34F31 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5000002000000000000001 /* Frameworks */ = {
+		E9B0C8F2291ABC1200D34F32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5000003000000000000001 /* Frameworks */ = {
+		E9B0C8F3291ABC1200D34F33 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -87,82 +87,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A0000001000000000000001 = {
+		E9B0C8D1291ABC1200D34F40 = {
 			isa = PBXGroup;
 			children = (
-				A6000001000000000000001 /* LiquidGlassSandbox */,
-				A6000002000000000000001 /* LiquidGlassSandboxTests */,
-				A6000003000000000000001 /* LiquidGlassSandboxUITests */,
-				A6000004000000000000001 /* Products */,
+				E9B0C8D2291ABC1200D34F41 /* LiquidGlassSandbox */,
+				E9B0C8D3291ABC1200D34F42 /* LiquidGlassSandboxTests */,
+				E9B0C8D4291ABC1200D34F43 /* LiquidGlassSandboxUITests */,
+				E9B0C8D5291ABC1200D34F44 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A6000001000000000000001 /* LiquidGlassSandbox */ = {
+		E9B0C8D2291ABC1200D34F41 /* LiquidGlassSandbox */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000000000000001 /* LiquidGlassSandboxApp.swift */,
-				A6000005000000000000001 /* Views */,
-				A6000006000000000000001 /* DesignSystem */,
-				A6000007000000000000001 /* Resources */,
+				E9B0C8B1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift */,
+				E9B0C8D6291ABC1200D34F45 /* Views */,
+				E9B0C8D7291ABC1200D34F46 /* DesignSystem */,
+				E9B0C8D8291ABC1200D34F47 /* Resources */,
 			);
 			path = LiquidGlassSandbox;
 			sourceTree = "<group>";
 		};
-		A6000002000000000000001 /* LiquidGlassSandboxTests */ = {
+		E9B0C8D3291ABC1200D34F42 /* LiquidGlassSandboxTests */ = {
 			isa = PBXGroup;
 			children = (
-				A2000014000000000000001 /* LiquidGlassSandboxTests.swift */,
+				E9B0C8BE291ABC1200D34F0E /* LiquidGlassSandboxTests.swift */,
 			);
 			path = LiquidGlassSandboxTests;
 			sourceTree = "<group>";
 		};
-		A6000003000000000000001 /* LiquidGlassSandboxUITests */ = {
+		E9B0C8D4291ABC1200D34F43 /* LiquidGlassSandboxUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A2000015000000000000001 /* LiquidGlassSandboxUITests.swift */,
+				E9B0C8BF291ABC1200D34F0F /* LiquidGlassSandboxUITests.swift */,
 			);
 			path = LiquidGlassSandboxUITests;
 			sourceTree = "<group>";
 		};
-		A6000004000000000000001 /* Products */ = {
+		E9B0C8D5291ABC1200D34F44 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4000001000000000000001 /* LiquidGlassSandbox.app */,
-				A4000002000000000000001 /* LiquidGlassSandboxTests.xctest */,
-				A4000003000000000000001 /* LiquidGlassSandboxUITests.xctest */,
+				E9B0C8E1291ABC1200D34F21 /* LiquidGlassSandbox.app */,
+				E9B0C8E2291ABC1200D34F22 /* LiquidGlassSandboxTests.xctest */,
+				E9B0C8E3291ABC1200D34F23 /* LiquidGlassSandboxUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A6000005000000000000001 /* Views */ = {
+		E9B0C8D6291ABC1200D34F45 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A2000002000000000000001 /* ContentView.swift */,
-				A2000003000000000000001 /* GlassComponentsView.swift */,
-				A2000004000000000000001 /* AdaptiveUIView.swift */,
-				A2000005000000000000001 /* DynamicBlurView.swift */,
-				A2000006000000000000001 /* InteractiveGlassView.swift */,
-				A2000007000000000000001 /* ColorAndGradientView.swift */,
+				E9B0C8B2291ABC1200D34F02 /* ContentView.swift */,
+				E9B0C8B3291ABC1200D34F03 /* GlassComponentsView.swift */,
+				E9B0C8B4291ABC1200D34F04 /* AdaptiveUIView.swift */,
+				E9B0C8B5291ABC1200D34F05 /* DynamicBlurView.swift */,
+				E9B0C8B6291ABC1200D34F06 /* InteractiveGlassView.swift */,
+				E9B0C8B7291ABC1200D34F07 /* ColorAndGradientView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A6000006000000000000001 /* DesignSystem */ = {
+		E9B0C8D7291ABC1200D34F46 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
-				A2000008000000000000001 /* DesignSystemGlobal.swift */,
-				A2000009000000000000001 /* DesignSystemLightLarge.swift */,
-				A2000010000000000000001 /* DesignSystemLightMedium.swift */,
-				A2000011000000000000001 /* DesignSystemDarkLarge.swift */,
-				A2000012000000000000001 /* DesignSystemDarkMedium.swift */,
+				E9B0C8B8291ABC1200D34F08 /* DesignSystemGlobal.swift */,
+				E9B0C8B9291ABC1200D34F09 /* DesignSystemLightLarge.swift */,
+				E9B0C8BA291ABC1200D34F0A /* DesignSystemLightMedium.swift */,
+				E9B0C8BB291ABC1200D34F0B /* DesignSystemDarkLarge.swift */,
+				E9B0C8BC291ABC1200D34F0C /* DesignSystemDarkMedium.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
 		};
-		A6000007000000000000001 /* Resources */ = {
+		E9B0C8D8291ABC1200D34F47 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A2000013000000000000001 /* Assets.xcassets */,
+				E9B0C8BD291ABC1200D34F0D /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -170,13 +170,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A4000001000000000000001 /* LiquidGlassSandbox */ = {
+		E9B0C8E1291ABC1200D34F21 /* LiquidGlassSandbox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7000001000000000000001 /* Build configuration list for PBXNativeTarget "LiquidGlassSandbox" */;
+			buildConfigurationList = E9B0C901291ABC1200D34F51 /* Build configuration list for PBXNativeTarget "LiquidGlassSandbox" */;
 			buildPhases = (
-				A8000001000000000000001 /* Sources */,
-				A5000001000000000000001 /* Frameworks */,
-				A9000001000000000000001 /* Resources */,
+				E9B0C8F4291ABC1200D34F34 /* Sources */,
+				E9B0C8F1291ABC1200D34F31 /* Frameworks */,
+				E9B0C8F7291ABC1200D34F37 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -184,106 +184,105 @@
 			);
 			name = LiquidGlassSandbox;
 			productName = LiquidGlassSandbox;
-			productReference = A4000001000000000000001 /* LiquidGlassSandbox.app */;
+			productReference = E9B0C8E1291ABC1200D34F21 /* LiquidGlassSandbox.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A4000002000000000000001 /* LiquidGlassSandboxTests */ = {
+		E9B0C8E2291ABC1200D34F22 /* LiquidGlassSandboxTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7000002000000000000001 /* Build configuration list for PBXNativeTarget "LiquidGlassSandboxTests" */;
+			buildConfigurationList = E9B0C902291ABC1200D34F52 /* Build configuration list for PBXNativeTarget "LiquidGlassSandboxTests" */;
 			buildPhases = (
-				A8000002000000000000001 /* Sources */,
-				A5000002000000000000001 /* Frameworks */,
-				A9000002000000000000001 /* Resources */,
+				E9B0C8F5291ABC1200D34F35 /* Sources */,
+				E9B0C8F2291ABC1200D34F32 /* Frameworks */,
+				E9B0C8F8291ABC1200D34F38 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A3000001000000000000002 /* PBXTargetDependency */,
+				E9B0C8C3291ABC1200D34F13 /* PBXTargetDependency */,
 			);
 			name = LiquidGlassSandboxTests;
 			productName = LiquidGlassSandboxTests;
-			productReference = A4000002000000000000001 /* LiquidGlassSandboxTests.xctest */;
+			productReference = E9B0C8E2291ABC1200D34F22 /* LiquidGlassSandboxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A4000003000000000000001 /* LiquidGlassSandboxUITests */ = {
+		E9B0C8E3291ABC1200D34F23 /* LiquidGlassSandboxUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7000003000000000000001 /* Build configuration list for PBXNativeTarget "LiquidGlassSandboxUITests" */;
+			buildConfigurationList = E9B0C903291ABC1200D34F53 /* Build configuration list for PBXNativeTarget "LiquidGlassSandboxUITests" */;
 			buildPhases = (
-				A8000003000000000000001 /* Sources */,
-				A5000003000000000000001 /* Frameworks */,
-				A9000003000000000000001 /* Resources */,
+				E9B0C8F6291ABC1200D34F36 /* Sources */,
+				E9B0C8F3291ABC1200D34F33 /* Frameworks */,
+				E9B0C8F9291ABC1200D34F39 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A3000002000000000000002 /* PBXTargetDependency */,
+				E9B0C8C4291ABC1200D34F14 /* PBXTargetDependency */,
 			);
 			name = LiquidGlassSandboxUITests;
 			productName = LiquidGlassSandboxUITests;
-			productReference = A4000003000000000000001 /* LiquidGlassSandboxUITests.xctest */;
+			productReference = E9B0C8E3291ABC1200D34F23 /* LiquidGlassSandboxUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A0000001000000000000001 /* Project object */ = {
+		E9B0C8D0291ABC1200D34F00 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					A4000001000000000000001 = {
-						CreatedOnToolsVersion = 16.0;
+					E9B0C8E1291ABC1200D34F21 = {
+						CreatedOnToolsVersion = 15.0;
 					};
-					A4000002000000000000001 = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = A4000001000000000000001;
+					E9B0C8E2291ABC1200D34F22 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = E9B0C8E1291ABC1200D34F21;
 					};
-					A4000003000000000000001 = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = A4000001000000000000001;
+					E9B0C8E3291ABC1200D34F23 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = E9B0C8E1291ABC1200D34F21;
 					};
 				};
 			};
-			buildConfigurationList = A7000004000000000000001 /* Build configuration list for PBXProject "LiquidGlassSandbox" */;
+			buildConfigurationList = E9B0C904291ABC1200D34F54 /* Build configuration list for PBXProject "LiquidGlassSandbox" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = A0000001000000000000001;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
-			productRefGroup = A6000004000000000000001 /* Products */;
+			mainGroup = E9B0C8D1291ABC1200D34F40;
+			productRefGroup = E9B0C8D5291ABC1200D34F44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A4000001000000000000001 /* LiquidGlassSandbox */,
-				A4000002000000000000001 /* LiquidGlassSandboxTests */,
-				A4000003000000000000001 /* LiquidGlassSandboxUITests */,
+				E9B0C8E1291ABC1200D34F21 /* LiquidGlassSandbox */,
+				E9B0C8E2291ABC1200D34F22 /* LiquidGlassSandboxTests */,
+				E9B0C8E3291ABC1200D34F23 /* LiquidGlassSandboxUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A9000001000000000000001 /* Resources */ = {
+		E9B0C8F7291ABC1200D34F37 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1000013000000000000001 /* Assets.xcassets in Resources */,
+				E9B0C8AD291ABC1200D34F0D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9000002000000000000001 /* Resources */ = {
+		E9B0C8F8291ABC1200D34F38 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9000003000000000000001 /* Resources */ = {
+		E9B0C8F9291ABC1200D34F39 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,58 +292,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A8000001000000000000001 /* Sources */ = {
+		E9B0C8F4291ABC1200D34F34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1000001000000000000001 /* LiquidGlassSandboxApp.swift in Sources */,
-				A1000002000000000000001 /* ContentView.swift in Sources */,
-				A1000003000000000000001 /* GlassComponentsView.swift in Sources */,
-				A1000004000000000000001 /* AdaptiveUIView.swift in Sources */,
-				A1000005000000000000001 /* DynamicBlurView.swift in Sources */,
-				A1000006000000000000001 /* InteractiveGlassView.swift in Sources */,
-				A1000007000000000000001 /* ColorAndGradientView.swift in Sources */,
-				A1000008000000000000001 /* DesignSystemGlobal.swift in Sources */,
-				A1000009000000000000001 /* DesignSystemLightLarge.swift in Sources */,
-				A1000010000000000000001 /* DesignSystemLightMedium.swift in Sources */,
-				A1000011000000000000001 /* DesignSystemDarkLarge.swift in Sources */,
-				A1000012000000000000001 /* DesignSystemDarkMedium.swift in Sources */,
+				E9B0C8A1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift in Sources */,
+				E9B0C8A2291ABC1200D34F02 /* ContentView.swift in Sources */,
+				E9B0C8A3291ABC1200D34F03 /* GlassComponentsView.swift in Sources */,
+				E9B0C8A4291ABC1200D34F04 /* AdaptiveUIView.swift in Sources */,
+				E9B0C8A5291ABC1200D34F05 /* DynamicBlurView.swift in Sources */,
+				E9B0C8A6291ABC1200D34F06 /* InteractiveGlassView.swift in Sources */,
+				E9B0C8A7291ABC1200D34F07 /* ColorAndGradientView.swift in Sources */,
+				E9B0C8A8291ABC1200D34F08 /* DesignSystemGlobal.swift in Sources */,
+				E9B0C8A9291ABC1200D34F09 /* DesignSystemLightLarge.swift in Sources */,
+				E9B0C8AA291ABC1200D34F0A /* DesignSystemLightMedium.swift in Sources */,
+				E9B0C8AB291ABC1200D34F0B /* DesignSystemDarkLarge.swift in Sources */,
+				E9B0C8AC291ABC1200D34F0C /* DesignSystemDarkMedium.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8000002000000000000001 /* Sources */ = {
+		E9B0C8F5291ABC1200D34F35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1000014000000000000001 /* LiquidGlassSandboxTests.swift in Sources */,
+				E9B0C8AE291ABC1200D34F0E /* LiquidGlassSandboxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8000003000000000000001 /* Sources */ = {
+		E9B0C8F6291ABC1200D34F36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1000015000000000000001 /* LiquidGlassSandboxUITests.swift in Sources */,
+				E9B0C8AF291ABC1200D34F0F /* LiquidGlassSandboxUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A3000001000000000000002 /* PBXTargetDependency */ = {
+		E9B0C8C3291ABC1200D34F13 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A4000001000000000000001 /* LiquidGlassSandbox */;
-			targetProxy = A3000001000000000000001 /* PBXContainerItemProxy */;
+			target = E9B0C8E1291ABC1200D34F21 /* LiquidGlassSandbox */;
+			targetProxy = E9B0C8C1291ABC1200D34F11 /* PBXContainerItemProxy */;
 		};
-		A3000002000000000000002 /* PBXTargetDependency */ = {
+		E9B0C8C4291ABC1200D34F14 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A4000001000000000000001 /* LiquidGlassSandbox */;
-			targetProxy = A3000002000000000000001 /* PBXContainerItemProxy */;
+			target = E9B0C8E1291ABC1200D34F21 /* LiquidGlassSandbox */;
+			targetProxy = E9B0C8C2291ABC1200D34F12 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		A7000001000000000000002 /* Debug */ = {
+		E9B0C911291ABC1200D34F61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -357,25 +356,23 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.LiquidGlassSandbox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A7000001000000000000003 /* Release */ = {
+		E9B0C912291ABC1200D34F62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -388,27 +385,26 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.LiquidGlassSandbox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		A7000002000000000000002 /* Debug */ = {
+		E9B0C913291ABC1200D34F63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -416,20 +412,19 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.LiquidGlassSandboxTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.sandbox.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiquidGlassSandbox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiquidGlassSandbox";
 			};
 			name = Debug;
 		};
-		A7000002000000000000003 /* Release */ = {
+		E9B0C914291ABC1200D34F64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -437,58 +432,54 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.LiquidGlassSandboxTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.sandbox.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiquidGlassSandbox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiquidGlassSandbox";
 			};
 			name = Release;
 		};
-		A7000003000000000000002 /* Debug */ = {
+		E9B0C915291ABC1200D34F65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.LiquidGlassSandboxUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.sandbox.uitests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = LiquidGlassSandbox;
 			};
 			name = Debug;
 		};
-		A7000003000000000000003 /* Release */ = {
+		E9B0C916291ABC1200D34F66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.LiquidGlassSandboxUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.sandbox.uitests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = LiquidGlassSandbox;
 			};
 			name = Release;
 		};
-		A7000004000000000000002 /* Debug */ = {
+		E9B0C917291ABC1200D34F67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -551,7 +542,7 @@
 			};
 			name = Debug;
 		};
-		A7000004000000000000003 /* Release */ = {
+		E9B0C918291ABC1200D34F68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -610,43 +601,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A7000001000000000000001 /* Build configuration list for PBXNativeTarget "LiquidGlassSandbox" */ = {
+		E9B0C901291ABC1200D34F51 /* Build configuration list for PBXNativeTarget "LiquidGlassSandbox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7000001000000000000002 /* Debug */,
-				A7000001000000000000003 /* Release */,
+				E9B0C911291ABC1200D34F61 /* Debug */,
+				E9B0C912291ABC1200D34F62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7000002000000000000001 /* Build configuration list for PBXNativeTarget "LiquidGlassSandboxTests" */ = {
+		E9B0C902291ABC1200D34F52 /* Build configuration list for PBXNativeTarget "LiquidGlassSandboxTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7000002000000000000002 /* Debug */,
-				A7000002000000000000003 /* Release */,
+				E9B0C913291ABC1200D34F63 /* Debug */,
+				E9B0C914291ABC1200D34F64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7000003000000000000001 /* Build configuration list for PBXNativeTarget "LiquidGlassSandboxUITests" */ = {
+		E9B0C903291ABC1200D34F53 /* Build configuration list for PBXNativeTarget "LiquidGlassSandboxUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7000003000000000000002 /* Debug */,
-				A7000003000000000000003 /* Release */,
+				E9B0C915291ABC1200D34F65 /* Debug */,
+				E9B0C916291ABC1200D34F66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7000004000000000000001 /* Build configuration list for PBXProject "LiquidGlassSandbox" */ = {
+		E9B0C904291ABC1200D34F54 /* Build configuration list for PBXProject "LiquidGlassSandbox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7000004000000000000002 /* Debug */,
-				A7000004000000000000003 /* Release */,
+				E9B0C917291ABC1200D34F67 /* Debug */,
+				E9B0C918291ABC1200D34F68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A0000001000000000000001 /* Project object */;
+	rootObject = E9B0C8D0291ABC1200D34F00 /* Project object */;
 }
