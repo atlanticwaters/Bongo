@@ -213,8 +213,7 @@ struct ColorAndGradientView: View {
                         }
                         .frame(maxWidth: .infinity)
                         .padding(16)
-                        .background(.glass)
-                        .foregroundColor(.white)
+                        .background(.regularMaterial)
                         .cornerRadius(12)
                     }
                     .padding()

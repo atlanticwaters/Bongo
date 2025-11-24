@@ -67,6 +67,7 @@ struct AdaptiveUIView: View {
                         DetailPanel(itemIndex: selectedItem)
                     }
                 }
+                .navigationTitle("Adaptive Layouts")
             } else {
                 // MARK: iPhone/Compact Layout - Stacked navigation
                 // On smaller screens, items stack vertically
@@ -83,8 +84,8 @@ struct AdaptiveUIView: View {
                         .padding(.vertical, 8)
                     }
                 }
+                .navigationTitle("Adaptive Layouts")
             }
-            .navigationTitle("Adaptive Layouts")  // Navigation bar title
         }
     }
 }
@@ -113,8 +114,7 @@ struct DetailPanel: View {
                 }
                 .frame(maxWidth: .infinity)
                 .padding(24)
-                .background(.glass)  // Glass morphism container
-                .cornerRadius(16)
+                .glassEffect(in: .rect(cornerRadius: 16))  // Liquid Glass effect
                 .padding()
 
                 // MARK: Content Description

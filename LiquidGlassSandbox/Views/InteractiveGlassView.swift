@@ -37,21 +37,19 @@ struct InteractiveGlassView: View {
                                 }
                                 .frame(maxWidth: .infinity)
                                 .padding(16)
-                                // Glass background with dynamic opacity
-                                .background(.glass)
                                 .foregroundColor(.white)
-                                .cornerRadius(12)
                             }
+                            .buttonStyle(.glass)
                             // Add scale animation on press
                             .scaleEffect(isPressed ? 0.95 : 1.0)
                             .onLongPressGesture(
                                 minimumDuration: 0,
-                                pressing: { pressing in
+                                perform: { },
+                                onPressingChanged: { pressing in
                                     withAnimation(.easeInOut(duration: 0.2)) {
                                         isPressed = pressing
                                     }
-                                },
-                                onPressingChanged: { _ in }
+                                }
                             )
 
                             // Secondary glass button
@@ -141,9 +139,8 @@ struct InteractiveGlassView: View {
                                 .font(.headline)
                                 .frame(maxWidth: .infinity)
                                 .padding(12)
-                                .background(.glass)
                                 .foregroundColor(.white)
-                                .cornerRadius(8)
+                                .glassEffect(in: .rect(cornerRadius: 8))
 
                             // Interactive slider
                             Slider(value: $sliderValue, in: 0...1)
@@ -175,12 +172,16 @@ struct InteractiveGlassView: View {
                                         .font(.headline)
                                         .frame(maxWidth: .infinity)
                                         .padding(12)
-                                        // Background changes based on selection
-                                        .background(
-                                            selectedTab == index ? .glass : .clear
-                                        )
                                         .foregroundColor(
                                             selectedTab == index ? .white : .blue
+                                        )
+                                        .background(
+                                            Group {
+                                                if selectedTab == index {
+                                                    RoundedRectangle(cornerRadius: 0)
+                                                        .fill(.thinMaterial)
+                                                }
+                                            }
                                         )
                                 }
                             }
