@@ -16,6 +16,7 @@ struct ContentView: View {
         case dynamicBlur
         case interactive
         case colorSystem
+        case designSystem
     }
 
     // MARK: - View Body
@@ -62,7 +63,16 @@ struct ContentView: View {
                 .tabItem {
                     Label("Colors", systemImage: "paintpalette")
                 }
+
+            // MARK: Design System Tab
+            // Sixth tab: showcases generated design system tokens in context
+            DesignSystemShowcaseView()
+                .tag(TabSelection.designSystem)
+                .tabItem {
+                    Label("Design", systemImage: "circle.grid.2x2.fill")
+                }
         }
+        .background(DesignSystemGlobal.GreigeGreige100.ignoresSafeArea())
     }
 }
 

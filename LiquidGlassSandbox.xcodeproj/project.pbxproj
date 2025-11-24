@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		105879452ED5038100B00087 /* ThemeShowcaseView 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105879442ED5038100B00087 /* ThemeShowcaseView 2.swift */; };
+		105879472ED5073900B00087 /* AppBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105879462ED5073900B00087 /* AppBackground.swift */; };
+		105879492ED5076100B00087 /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105879482ED5076100B00087 /* CustomFonts.swift */; };
+		1058794B2ED5077600B00087 /* FONT_SETUP_INSTRUCTIONS.md in Resources */ = {isa = PBXBuildFile; fileRef = 1058794A2ED5077600B00087 /* FONT_SETUP_INSTRUCTIONS.md */; };
+		1058794D2ED507D000B00087 /* IMPLEMENTATION_SUMMARY.md in Resources */ = {isa = PBXBuildFile; fileRef = 1058794C2ED507D000B00087 /* IMPLEMENTATION_SUMMARY.md */; };
+		1058794F2ED5082D00B00087 /* QUICK_REFERENCE.md in Resources */ = {isa = PBXBuildFile; fileRef = 1058794E2ED5082D00B00087 /* QUICK_REFERENCE.md */; };
 		E9B0C8A1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8B1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift */; };
 		E9B0C8A2291ABC1200D34F02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8B2291ABC1200D34F02 /* ContentView.swift */; };
 		E9B0C8A3291ABC1200D34F03 /* GlassComponentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8B3291ABC1200D34F03 /* GlassComponentsView.swift */; };
@@ -22,6 +28,7 @@
 		E9B0C8AD291ABC1200D34F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9B0C8BD291ABC1200D34F0D /* Assets.xcassets */; };
 		E9B0C8AE291ABC1200D34F0E /* LiquidGlassSandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8BE291ABC1200D34F0E /* LiquidGlassSandboxTests.swift */; };
 		E9B0C8AF291ABC1200D34F0F /* LiquidGlassSandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8BF291ABC1200D34F0F /* LiquidGlassSandboxUITests.swift */; };
+		D40C549CE4A1451CAAFC21AB /* ThemeShowcaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3531046534B9094834946 /* ThemeShowcaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +49,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		105879442ED5038100B00087 /* ThemeShowcaseView 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeShowcaseView 2.swift"; sourceTree = "<group>"; };
+		105879462ED5073900B00087 /* AppBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackground.swift; sourceTree = "<group>"; };
+		105879482ED5076100B00087 /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
+		1058794A2ED5077600B00087 /* FONT_SETUP_INSTRUCTIONS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FONT_SETUP_INSTRUCTIONS.md; sourceTree = "<group>"; };
+		1058794C2ED507D000B00087 /* IMPLEMENTATION_SUMMARY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = IMPLEMENTATION_SUMMARY.md; sourceTree = "<group>"; };
+		1058794E2ED5082D00B00087 /* QUICK_REFERENCE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = QUICK_REFERENCE.md; sourceTree = "<group>"; };
+		1F4DF7A4AD8A410C8C9C0D9F /* LiquidGlassSandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidGlassSandboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4931663E70A1441884C7FA63 /* LiquidGlassSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquidGlassSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B367D6077AEB478C891230CE /* LiquidGlassSandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidGlassSandboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B0C8B1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassSandboxApp.swift; sourceTree = "<group>"; };
 		E9B0C8B2291ABC1200D34F02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E9B0C8B3291ABC1200D34F03 /* GlassComponentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassComponentsView.swift; sourceTree = "<group>"; };
@@ -57,9 +73,7 @@
 		E9B0C8BD291ABC1200D34F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9B0C8BE291ABC1200D34F0E /* LiquidGlassSandboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassSandboxTests.swift; sourceTree = "<group>"; };
 		E9B0C8BF291ABC1200D34F0F /* LiquidGlassSandboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassSandboxUITests.swift; sourceTree = "<group>"; };
-		E9B0C8E1291ABC1200D34F21 /* LiquidGlassSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquidGlassSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9B0C8E2291ABC1200D34F22 /* LiquidGlassSandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidGlassSandboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9B0C8E3291ABC1200D34F23 /* LiquidGlassSandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidGlassSandboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE3531046534B9094834946 /* ThemeShowcaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeShowcaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,9 +141,9 @@
 		E9B0C8D5291ABC1200D34F44 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E9B0C8E1291ABC1200D34F21 /* LiquidGlassSandbox.app */,
-				E9B0C8E2291ABC1200D34F22 /* LiquidGlassSandboxTests.xctest */,
-				E9B0C8E3291ABC1200D34F23 /* LiquidGlassSandboxUITests.xctest */,
+				4931663E70A1441884C7FA63 /* LiquidGlassSandbox.app */,
+				1F4DF7A4AD8A410C8C9C0D9F /* LiquidGlassSandboxTests.xctest */,
+				B367D6077AEB478C891230CE /* LiquidGlassSandboxUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +157,8 @@
 				E9B0C8B5291ABC1200D34F05 /* DynamicBlurView.swift */,
 				E9B0C8B6291ABC1200D34F06 /* InteractiveGlassView.swift */,
 				E9B0C8B7291ABC1200D34F07 /* ColorAndGradientView.swift */,
+				105879442ED5038100B00087 /* ThemeShowcaseView 2.swift */,
+				BDE3531046534B9094834946 /* ThemeShowcaseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +171,11 @@
 				E9B0C8BA291ABC1200D34F0A /* DesignSystemLightMedium.swift */,
 				E9B0C8BB291ABC1200D34F0B /* DesignSystemDarkLarge.swift */,
 				E9B0C8BC291ABC1200D34F0C /* DesignSystemDarkMedium.swift */,
+				105879462ED5073900B00087 /* AppBackground.swift */,
+				105879482ED5076100B00087 /* CustomFonts.swift */,
+				1058794A2ED5077600B00087 /* FONT_SETUP_INSTRUCTIONS.md */,
+				1058794C2ED507D000B00087 /* IMPLEMENTATION_SUMMARY.md */,
+				1058794E2ED5082D00B00087 /* QUICK_REFERENCE.md */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -184,7 +205,7 @@
 			);
 			name = LiquidGlassSandbox;
 			productName = LiquidGlassSandbox;
-			productReference = E9B0C8E1291ABC1200D34F21 /* LiquidGlassSandbox.app */;
+			productReference = 4931663E70A1441884C7FA63 /* LiquidGlassSandbox.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E9B0C8E2291ABC1200D34F22 /* LiquidGlassSandboxTests */ = {
@@ -202,7 +223,7 @@
 			);
 			name = LiquidGlassSandboxTests;
 			productName = LiquidGlassSandboxTests;
-			productReference = E9B0C8E2291ABC1200D34F22 /* LiquidGlassSandboxTests.xctest */;
+			productReference = 1F4DF7A4AD8A410C8C9C0D9F /* LiquidGlassSandboxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		E9B0C8E3291ABC1200D34F23 /* LiquidGlassSandboxUITests */ = {
@@ -220,7 +241,7 @@
 			);
 			name = LiquidGlassSandboxUITests;
 			productName = LiquidGlassSandboxUITests;
-			productReference = E9B0C8E3291ABC1200D34F23 /* LiquidGlassSandboxUITests.xctest */;
+			productReference = B367D6077AEB478C891230CE /* LiquidGlassSandboxUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -231,7 +252,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					E9B0C8E1291ABC1200D34F21 = {
 						CreatedOnToolsVersion = 15.0;
@@ -271,6 +292,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1058794F2ED5082D00B00087 /* QUICK_REFERENCE.md in Resources */,
+				1058794B2ED5077600B00087 /* FONT_SETUP_INSTRUCTIONS.md in Resources */,
+				1058794D2ED507D000B00087 /* IMPLEMENTATION_SUMMARY.md in Resources */,
 				E9B0C8AD291ABC1200D34F0D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +323,7 @@
 				E9B0C8A1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift in Sources */,
 				E9B0C8A2291ABC1200D34F02 /* ContentView.swift in Sources */,
 				E9B0C8A3291ABC1200D34F03 /* GlassComponentsView.swift in Sources */,
+				105879472ED5073900B00087 /* AppBackground.swift in Sources */,
 				E9B0C8A4291ABC1200D34F04 /* AdaptiveUIView.swift in Sources */,
 				E9B0C8A5291ABC1200D34F05 /* DynamicBlurView.swift in Sources */,
 				E9B0C8A6291ABC1200D34F06 /* InteractiveGlassView.swift in Sources */,
@@ -307,6 +332,9 @@
 				E9B0C8A9291ABC1200D34F09 /* DesignSystemLightLarge.swift in Sources */,
 				E9B0C8AA291ABC1200D34F0A /* DesignSystemLightMedium.swift in Sources */,
 				E9B0C8AB291ABC1200D34F0B /* DesignSystemDarkLarge.swift in Sources */,
+				105879492ED5076100B00087 /* CustomFonts.swift in Sources */,
+				105879452ED5038100B00087 /* ThemeShowcaseView 2.swift in Sources */,
+				D40C549CE4A1451CAAFC21AB /* ThemeShowcaseView.swift in Sources */,
 				E9B0C8AC291ABC1200D34F0C /* DesignSystemDarkMedium.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,7 +386,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,7 +415,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -404,13 +432,12 @@
 		E9B0C913291ABC1200D34F63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.sandbox.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,13 +451,12 @@
 		E9B0C914291ABC1200D34F64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.sandbox.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,12 +470,11 @@
 		E9B0C915291ABC1200D34F65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.sandbox.uitests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -463,12 +488,11 @@
 		E9B0C916291ABC1200D34F66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.sandbox.uitests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -531,12 +555,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -588,11 +613,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
