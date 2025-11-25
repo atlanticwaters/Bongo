@@ -13,6 +13,16 @@
 		1058794B2ED5077600B00087 /* FONT_SETUP_INSTRUCTIONS.md in Resources */ = {isa = PBXBuildFile; fileRef = 1058794A2ED5077600B00087 /* FONT_SETUP_INSTRUCTIONS.md */; };
 		1058794D2ED507D000B00087 /* IMPLEMENTATION_SUMMARY.md in Resources */ = {isa = PBXBuildFile; fileRef = 1058794C2ED507D000B00087 /* IMPLEMENTATION_SUMMARY.md */; };
 		1058794F2ED5082D00B00087 /* QUICK_REFERENCE.md in Resources */ = {isa = PBXBuildFile; fileRef = 1058794E2ED5082D00B00087 /* QUICK_REFERENCE.md */; };
+		10F8C06E2ED5FF60004ECA3E /* DesignSystemTokenInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F8C06D2ED5FF60004ECA3E /* DesignSystemTokenInspector.swift */; };
+		10F8C0702ED60161004ECA3E /* TARGET_MEMBERSHIP_FIX.md in Resources */ = {isa = PBXBuildFile; fileRef = 10F8C06F2ED60161004ECA3E /* TARGET_MEMBERSHIP_FIX.md */; };
+		10F8C0722ED60193004ECA3E /* THEME_USAGE_AUDIT.md in Resources */ = {isa = PBXBuildFile; fileRef = 10F8C0712ED60193004ECA3E /* THEME_USAGE_AUDIT.md */; };
+		10F8C0742ED60289004ECA3E /* THEME_FIX_COMPLETE.md in Resources */ = {isa = PBXBuildFile; fileRef = 10F8C0732ED60289004ECA3E /* THEME_FIX_COMPLETE.md */; };
+		10F8C0762ED602AA004ECA3E /* QUICK_START_FIX.md in Resources */ = {isa = PBXBuildFile; fileRef = 10F8C0752ED602AA004ECA3E /* QUICK_START_FIX.md */; };
+		10F8C0772ED606B9004ECA3E /* DesignSystemDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F8C0682ED5FB01004ECA3E /* DesignSystemDemoView.swift */; };
+		10F8C0782ED606DC004ECA3E /* ThemeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F8C0612ED5F712004ECA3E /* ThemeExtensions.swift */; };
+		10F8C07A2ED60909004ECA3E /* THEME_MODE_IMPLEMENTATION.md in Resources */ = {isa = PBXBuildFile; fileRef = 10F8C0792ED60909004ECA3E /* THEME_MODE_IMPLEMENTATION.md */; };
+		10F8C0802ED6180F004ECA3E /* ThemeColorsPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F8C0652ED5F84D004ECA3E /* ThemeColorsPreview.swift */; };
+		D40C549CE4A1451CAAFC21AB /* ThemeShowcaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3531046534B9094834946 /* ThemeShowcaseView.swift */; };
 		E9B0C8A1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8B1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift */; };
 		E9B0C8A2291ABC1200D34F02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8B2291ABC1200D34F02 /* ContentView.swift */; };
 		E9B0C8A3291ABC1200D34F03 /* GlassComponentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8B3291ABC1200D34F03 /* GlassComponentsView.swift */; };
@@ -28,7 +38,6 @@
 		E9B0C8AD291ABC1200D34F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9B0C8BD291ABC1200D34F0D /* Assets.xcassets */; };
 		E9B0C8AE291ABC1200D34F0E /* LiquidGlassSandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8BE291ABC1200D34F0E /* LiquidGlassSandboxTests.swift */; };
 		E9B0C8AF291ABC1200D34F0F /* LiquidGlassSandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8BF291ABC1200D34F0F /* LiquidGlassSandboxUITests.swift */; };
-		D40C549CE4A1451CAAFC21AB /* ThemeShowcaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3531046534B9094834946 /* ThemeShowcaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +64,33 @@
 		1058794A2ED5077600B00087 /* FONT_SETUP_INSTRUCTIONS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FONT_SETUP_INSTRUCTIONS.md; sourceTree = "<group>"; };
 		1058794C2ED507D000B00087 /* IMPLEMENTATION_SUMMARY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = IMPLEMENTATION_SUMMARY.md; sourceTree = "<group>"; };
 		1058794E2ED5082D00B00087 /* QUICK_REFERENCE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = QUICK_REFERENCE.md; sourceTree = "<group>"; };
+		10F8C0612ED5F712004ECA3E /* ThemeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeExtensions.swift; sourceTree = "<group>"; };
+		10F8C0622ED5F7D2004ECA3E /* THEME_IMPLEMENTATION_GUIDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = THEME_IMPLEMENTATION_GUIDE.md; sourceTree = "<group>"; };
+		10F8C0632ED5F7FE004ECA3E /* ThemeExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeExampleView.swift; sourceTree = "<group>"; };
+		10F8C0642ED5F82B004ECA3E /* THEME_CHANGES_SUMMARY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = THEME_CHANGES_SUMMARY.md; sourceTree = "<group>"; };
+		10F8C0652ED5F84D004ECA3E /* ThemeColorsPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorsPreview.swift; sourceTree = "<group>"; };
+		10F8C0662ED5F87C004ECA3E /* THEME_QUICK_REFERENCE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = THEME_QUICK_REFERENCE.md; sourceTree = "<group>"; };
+		10F8C0672ED5FABD004ECA3E /* ThemeExtensions 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeExtensions 2.swift"; sourceTree = "<group>"; };
+		10F8C0682ED5FB01004ECA3E /* DesignSystemDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemDemoView.swift; sourceTree = "<group>"; };
+		10F8C0692ED5FB5C004ECA3E /* DESIGN_SYSTEM_INTEGRATION.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DESIGN_SYSTEM_INTEGRATION.md; sourceTree = "<group>"; };
+		10F8C06A2ED5FB7E004ECA3E /* DESIGN_SYSTEM_QUICK_REFERENCE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DESIGN_SYSTEM_QUICK_REFERENCE.md; sourceTree = "<group>"; };
+		10F8C06B2ED5FC72004ECA3E /* DESIGN_SYSTEM_INTEGRATION_COMPLETE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DESIGN_SYSTEM_INTEGRATION_COMPLETE.md; sourceTree = "<group>"; };
+		10F8C06C2ED5FCC5004ECA3E /* DESIGN_SYSTEM_VISUAL_FLOW.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DESIGN_SYSTEM_VISUAL_FLOW.md; sourceTree = "<group>"; };
+		10F8C06D2ED5FF60004ECA3E /* DesignSystemTokenInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemTokenInspector.swift; sourceTree = "<group>"; };
+		10F8C06F2ED60161004ECA3E /* TARGET_MEMBERSHIP_FIX.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TARGET_MEMBERSHIP_FIX.md; sourceTree = "<group>"; };
+		10F8C0712ED60193004ECA3E /* THEME_USAGE_AUDIT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = THEME_USAGE_AUDIT.md; sourceTree = "<group>"; };
+		10F8C0732ED60289004ECA3E /* THEME_FIX_COMPLETE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = THEME_FIX_COMPLETE.md; sourceTree = "<group>"; };
+		10F8C0752ED602AA004ECA3E /* QUICK_START_FIX.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = QUICK_START_FIX.md; sourceTree = "<group>"; };
+		10F8C0792ED60909004ECA3E /* THEME_MODE_IMPLEMENTATION.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = THEME_MODE_IMPLEMENTATION.md; sourceTree = "<group>"; };
+		10F8C07B2ED60CB5004ECA3E /* DESIGN_SYSTEM_ENHANCEMENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DESIGN_SYSTEM_ENHANCEMENTS.md; sourceTree = "<group>"; };
+		10F8C07C2ED61400004ECA3E /* THEME_COLORS_PREVIEW_ENHANCEMENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = THEME_COLORS_PREVIEW_ENHANCEMENTS.md; sourceTree = "<group>"; };
+		10F8C07D2ED6162F004ECA3E /* BRAND_TINT_FIX_SUMMARY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = BRAND_TINT_FIX_SUMMARY.md; sourceTree = "<group>"; };
+		10F8C07E2ED61657004ECA3E /* WHERE_IS_BACKGROUND_SELECTOR.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = WHERE_IS_BACKGROUND_SELECTOR.md; sourceTree = "<group>"; };
+		10F8C07F2ED6169F004ECA3E /* COMPLETE_FIX_SUMMARY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = COMPLETE_FIX_SUMMARY.md; sourceTree = "<group>"; };
 		1F4DF7A4AD8A410C8C9C0D9F /* LiquidGlassSandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidGlassSandboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4931663E70A1441884C7FA63 /* LiquidGlassSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquidGlassSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B367D6077AEB478C891230CE /* LiquidGlassSandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidGlassSandboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE3531046534B9094834946 /* ThemeShowcaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeShowcaseView.swift; sourceTree = "<group>"; };
 		E9B0C8B1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassSandboxApp.swift; sourceTree = "<group>"; };
 		E9B0C8B2291ABC1200D34F02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E9B0C8B3291ABC1200D34F03 /* GlassComponentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassComponentsView.swift; sourceTree = "<group>"; };
@@ -73,7 +106,6 @@
 		E9B0C8BD291ABC1200D34F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9B0C8BE291ABC1200D34F0E /* LiquidGlassSandboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassSandboxTests.swift; sourceTree = "<group>"; };
 		E9B0C8BF291ABC1200D34F0F /* LiquidGlassSandboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassSandboxUITests.swift; sourceTree = "<group>"; };
-		BDE3531046534B9094834946 /* ThemeShowcaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeShowcaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +140,23 @@
 				E9B0C8D3291ABC1200D34F42 /* LiquidGlassSandboxTests */,
 				E9B0C8D4291ABC1200D34F43 /* LiquidGlassSandboxUITests */,
 				E9B0C8D5291ABC1200D34F44 /* Products */,
+				10F8C0612ED5F712004ECA3E /* ThemeExtensions.swift */,
+				10F8C0622ED5F7D2004ECA3E /* THEME_IMPLEMENTATION_GUIDE.md */,
+				10F8C0632ED5F7FE004ECA3E /* ThemeExampleView.swift */,
+				10F8C0642ED5F82B004ECA3E /* THEME_CHANGES_SUMMARY.md */,
+				10F8C0652ED5F84D004ECA3E /* ThemeColorsPreview.swift */,
+				10F8C0662ED5F87C004ECA3E /* THEME_QUICK_REFERENCE.md */,
+				10F8C0672ED5FABD004ECA3E /* ThemeExtensions 2.swift */,
+				10F8C0682ED5FB01004ECA3E /* DesignSystemDemoView.swift */,
+				10F8C0692ED5FB5C004ECA3E /* DESIGN_SYSTEM_INTEGRATION.md */,
+				10F8C06A2ED5FB7E004ECA3E /* DESIGN_SYSTEM_QUICK_REFERENCE.md */,
+				10F8C06B2ED5FC72004ECA3E /* DESIGN_SYSTEM_INTEGRATION_COMPLETE.md */,
+				10F8C06C2ED5FCC5004ECA3E /* DESIGN_SYSTEM_VISUAL_FLOW.md */,
+				10F8C07B2ED60CB5004ECA3E /* DESIGN_SYSTEM_ENHANCEMENTS.md */,
+				10F8C07C2ED61400004ECA3E /* THEME_COLORS_PREVIEW_ENHANCEMENTS.md */,
+				10F8C07D2ED6162F004ECA3E /* BRAND_TINT_FIX_SUMMARY.md */,
+				10F8C07E2ED61657004ECA3E /* WHERE_IS_BACKGROUND_SELECTOR.md */,
+				10F8C07F2ED6169F004ECA3E /* COMPLETE_FIX_SUMMARY.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +208,11 @@
 				E9B0C8B7291ABC1200D34F07 /* ColorAndGradientView.swift */,
 				105879442ED5038100B00087 /* ThemeShowcaseView 2.swift */,
 				BDE3531046534B9094834946 /* ThemeShowcaseView.swift */,
+				10F8C06D2ED5FF60004ECA3E /* DesignSystemTokenInspector.swift */,
+				10F8C06F2ED60161004ECA3E /* TARGET_MEMBERSHIP_FIX.md */,
+				10F8C0712ED60193004ECA3E /* THEME_USAGE_AUDIT.md */,
+				10F8C0732ED60289004ECA3E /* THEME_FIX_COMPLETE.md */,
+				10F8C0752ED602AA004ECA3E /* QUICK_START_FIX.md */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +230,7 @@
 				1058794A2ED5077600B00087 /* FONT_SETUP_INSTRUCTIONS.md */,
 				1058794C2ED507D000B00087 /* IMPLEMENTATION_SUMMARY.md */,
 				1058794E2ED5082D00B00087 /* QUICK_REFERENCE.md */,
+				10F8C0792ED60909004ECA3E /* THEME_MODE_IMPLEMENTATION.md */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -293,8 +348,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1058794F2ED5082D00B00087 /* QUICK_REFERENCE.md in Resources */,
+				10F8C0762ED602AA004ECA3E /* QUICK_START_FIX.md in Resources */,
 				1058794B2ED5077600B00087 /* FONT_SETUP_INSTRUCTIONS.md in Resources */,
+				10F8C07A2ED60909004ECA3E /* THEME_MODE_IMPLEMENTATION.md in Resources */,
 				1058794D2ED507D000B00087 /* IMPLEMENTATION_SUMMARY.md in Resources */,
+				10F8C0702ED60161004ECA3E /* TARGET_MEMBERSHIP_FIX.md in Resources */,
+				10F8C0722ED60193004ECA3E /* THEME_USAGE_AUDIT.md in Resources */,
+				10F8C0742ED60289004ECA3E /* THEME_FIX_COMPLETE.md in Resources */,
 				E9B0C8AD291ABC1200D34F0D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,9 +380,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10F8C0772ED606B9004ECA3E /* DesignSystemDemoView.swift in Sources */,
+				10F8C06E2ED5FF60004ECA3E /* DesignSystemTokenInspector.swift in Sources */,
 				E9B0C8A1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift in Sources */,
 				E9B0C8A2291ABC1200D34F02 /* ContentView.swift in Sources */,
 				E9B0C8A3291ABC1200D34F03 /* GlassComponentsView.swift in Sources */,
+				10F8C0782ED606DC004ECA3E /* ThemeExtensions.swift in Sources */,
 				105879472ED5073900B00087 /* AppBackground.swift in Sources */,
 				E9B0C8A4291ABC1200D34F04 /* AdaptiveUIView.swift in Sources */,
 				E9B0C8A5291ABC1200D34F05 /* DynamicBlurView.swift in Sources */,
@@ -335,6 +398,7 @@
 				105879492ED5076100B00087 /* CustomFonts.swift in Sources */,
 				105879452ED5038100B00087 /* ThemeShowcaseView 2.swift in Sources */,
 				D40C549CE4A1451CAAFC21AB /* ThemeShowcaseView.swift in Sources */,
+				10F8C0802ED6180F004ECA3E /* ThemeColorsPreview.swift in Sources */,
 				E9B0C8AC291ABC1200D34F0C /* DesignSystemDarkMedium.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

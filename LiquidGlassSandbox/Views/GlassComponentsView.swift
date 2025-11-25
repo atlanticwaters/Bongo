@@ -2,6 +2,7 @@ import SwiftUI
 
 // MARK: - Glass Components View
 // Showcases all available glass materials and morphism effects in iOS 18
+// ✅ Updated to use design system theme tokens throughout
 struct GlassComponentsView: View {
 
     // MARK: - View Body
@@ -9,21 +10,24 @@ struct GlassComponentsView: View {
         // NavigationStack provides the navigation structure for this tab
         NavigationStack {
             ScrollView {
-                VStack(spacing: 20) {
+                VStack(spacing: AppTheme.spacingLoose) {  // Use design system spacing (24pt)
 
                     // MARK: Header
                     // Creates visual hierarchy and context for the user
-                    Text("Glass Morphism Materials")
-                        .font(.system(size: 28, weight: .bold))  // Large, bold text
-                        .frame(maxWidth: .infinity, alignment: .leading)  // Align to left
-                        .padding()
+                    Text("Materials")
+                        .font(.system(size: 28, weight: .bold))
+                        .foregroundStyle(Color.textPrimary)  // Design system text color
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(AppTheme.spacingStandard)  // Design system spacing (16pt)
 
                     // MARK: Ultra Thin Material
                     // Demonstrates the most transparent glass option
-                    VStack(spacing: 8) {
+                    VStack(spacing: AppTheme.spacingCompact) {  // Design system spacing (12pt)
                         Text("Ultra Thin Material")
                             .font(.headline)
+                            .foregroundStyle(Color.textPrimary)  // Design system text color
                             .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.horizontal, AppTheme.spacingCompact)
 
                         // ZStack layers views on top of each other
                         // Background image shows through the glass
@@ -31,8 +35,8 @@ struct GlassComponentsView: View {
                             // Background: gradient to simulate depth
                             LinearGradient(
                                 gradient: Gradient(colors: [
-                                    Color.blue.opacity(0.3),
-                                    Color.purple.opacity(0.2)
+                                    Color.brandPrimary.opacity(0.4),
+                                    Color.brandDark.opacity(7)
                                 ]),
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
@@ -43,32 +47,35 @@ struct GlassComponentsView: View {
                             VStack {
                                 Text("Maximum Transparency")
                                     .font(.body)
-                                    .foregroundColor(.white)  // White text for visibility
+                                    .foregroundColor(Color.textPrimary)  // White text for visibility
                             }
                             .frame(maxWidth: .infinity)
                             .frame(height: 120)
                             .background(.ultraThinMaterial)  // Apply glass effect
-                            .cornerRadius(16)  // Rounded corners for modern look
+                            .cornerRadius(AppTheme.cornerRadiusLarge)  // Design system corner radius (12pt)
+                            .padding(.horizontal, AppTheme.spacingLoose)
                         }
                         .frame(height: 180)
-                        .cornerRadius(16)
+                        .cornerRadius(AppTheme.cornerRadiusLarge)  // Design system corner radius (12pt)
                     }
-                    .padding()
-                    .background(.gray.opacity(0.1))
-                    .cornerRadius(12)
+                    .frame(maxWidth: .infinity)
+                    .padding(.horizontal, AppTheme.spacingLoose)  // Design system spacing (24pt)
+                    .themedContainer()  // Use themed card background (Griege 200)
 
                     // MARK: Thin Material
                     // Medium transparency glass option
-                    VStack(spacing: 8) {
+                    VStack(spacing: AppTheme.spacingCompact) {  // Design system spacing (12pt)
                         Text("Thin Material")
                             .font(.headline)
+                            .foregroundStyle(Color.textPrimary)  // Design system text color
                             .frame(maxWidth: .infinity, alignment: .leading)
-
+                            .padding(.horizontal, AppTheme.spacingCompact)
+                        
                         ZStack {
                             LinearGradient(
                                 gradient: Gradient(colors: [
-                                    Color.green.opacity(0.3),
-                                    Color.cyan.opacity(0.2)
+                                    Color.brandPrimary.opacity(0.4),
+                                    Color.brandDark.opacity(7)
                                 ]),
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
@@ -77,32 +84,34 @@ struct GlassComponentsView: View {
                             VStack {
                                 Text("Balanced Blur & Clarity")
                                     .font(.body)
-                                    .foregroundColor(.white)
+                                    .foregroundColor(Color.textPrimary)
                             }
                             .frame(maxWidth: .infinity)
                             .frame(height: 120)
                             .background(.thinMaterial)  // Slightly more blur than ultraThin
-                            .cornerRadius(16)
+                            .cornerRadius(AppTheme.cornerRadiusLarge)  // Design system corner radius (12pt)
+                            .padding(.horizontal, AppTheme.spacingLoose)
                         }
                         .frame(height: 180)
-                        .cornerRadius(16)
+                        .cornerRadius(AppTheme.cornerRadiusLarge)  // Design system corner radius (12pt)
                     }
-                    .padding()
-                    .background(.gray.opacity(0.1))
-                    .cornerRadius(12)
+                    .frame(maxWidth: .infinity)
+                    .padding(.horizontal, AppTheme.spacingLoose)  // Design system spacing (24pt)
+                    .themedContainer()  // Use themed card background (Griege 200)
 
                     // MARK: Regular Material
                     // Strong glass effect with visible blur
-                    VStack(spacing: 8) {
+                    VStack(spacing: AppTheme.spacingCompact) {  // Design system spacing (12pt)
                         Text("Regular Material")
                             .font(.headline)
+                            .foregroundStyle(Color.textPrimary)  // Design system text color
                             .frame(maxWidth: .infinity, alignment: .leading)
 
                         ZStack {
                             LinearGradient(
                                 gradient: Gradient(colors: [
-                                    Color.red.opacity(0.3),
-                                    Color.orange.opacity(0.2)
+                                    Color.brandPrimary.opacity(0.4),
+                                    Color.brandDark.opacity(7)
                                 ]),
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
@@ -111,32 +120,35 @@ struct GlassComponentsView: View {
                             VStack {
                                 Text("Strong Blur Effect")
                                     .font(.body)
-                                    .foregroundColor(.white)
+                                    .foregroundColor(Color.textPrimary)
                             }
                             .frame(maxWidth: .infinity)
                             .frame(height: 120)
                             .background(.regularMaterial)  // Noticeable blur intensity
-                            .cornerRadius(16)
+                            .cornerRadius(AppTheme.cornerRadiusLarge)  // Design system corner radius (12pt)
+                            .padding(.horizontal, AppTheme.spacingLoose)
                         }
                         .frame(height: 180)
-                        .cornerRadius(16)
+                        .cornerRadius(AppTheme.cornerRadiusLarge)  // Design system corner radius (12pt)
                     }
-                    .padding()
-                    .background(.gray.opacity(0.1))
-                    .cornerRadius(12)
+                    .frame(maxWidth: .infinity)
+                    .padding(.horizontal, AppTheme.spacingLoose)  // Design system spacing (24pt)
+                    .themedContainer()  // Use themed card background (Griege 200)
 
                     // MARK: Thick Material
                     // Maximum opacity and blur for glass effect
-                    VStack(spacing: 8) {
+                    VStack(spacing: AppTheme.spacingCompact) {  // Design system spacing (12pt)
                         Text("Thick Material")
                             .font(.headline)
+                            .foregroundStyle(Color.textPrimary)  // Design system text color
                             .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.horizontal, AppTheme.spacingLoose)
 
                         ZStack {
                             LinearGradient(
                                 gradient: Gradient(colors: [
-                                    Color.yellow.opacity(0.3),
-                                    Color.pink.opacity(0.2)
+                                    Color.brandPrimary.opacity(0.4),
+                                    Color.brandDark.opacity(7)
                                 ]),
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
@@ -145,63 +157,27 @@ struct GlassComponentsView: View {
                             VStack {
                                 Text("Maximum Opacity")
                                     .font(.body)
-                                    .foregroundColor(.white)
+                                    .foregroundColor(Color.textPrimary)
                             }
-                            .frame(maxWidth: .infinity)
+                            .padding(.horizontal, AppTheme.spacingLoose)
                             .frame(height: 120)
+                            .padding(.horizontal, AppTheme.spacingLoose)
                             .background(.thickMaterial)  // Strongest blur, most opaque
-                            .cornerRadius(16)
+                            .cornerRadius(AppTheme.cornerRadiusLarge)  // Design system corner radius (12pt)
                         }
                         .frame(height: 180)
-                        .cornerRadius(16)
+                        .cornerRadius(AppTheme.cornerRadiusLarge)  // Design system corner radius (12pt)
                     }
-                    .padding()
-                    .background(.gray.opacity(0.1))
-                    .cornerRadius(12)
+                    .frame(maxWidth: .infinity)
+                    .padding(.horizontal, AppTheme.spacingLoose)  // Design system spacing (24pt)
+                    .themedContainer()  // Use themed card background (Griege 200)
 
-                    // MARK: Liquid Glass Material
-                    // iOS 18 specific glass effect optimized for modern design
-                    VStack(spacing: 8) {
-                        Text("Liquid Glass (iOS 18)")
-                            .font(.headline)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-
-                        ZStack {
-                            // Complex gradient for visual richness
-                            LinearGradient(
-                                gradient: Gradient(colors: [
-                                    Color.blue.opacity(0.4),
-                                    Color.purple.opacity(0.3)
-                                ]),
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
-
-                            VStack(spacing: 12) {
-                                Image(systemName: "sparkles")
-                                    .font(.system(size: 32))
-                                    .foregroundColor(.white)
-
-                                Text("Modern Glass Design")
-                                    .font(.body)
-                                    .foregroundColor(.white)
-                            }
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 120)
-                            .background(.regularMaterial)  // Using regularMaterial for compatibility
-                            .cornerRadius(16)
-                        }
-                        .frame(height: 180)
-                        .cornerRadius(16)
-                    }
-                    .padding()
-                    .background(.gray.opacity(0.1))
-                    .cornerRadius(12)
                 }
-                .padding()
             }
             .navigationTitle("Glass Components")  // Title in navigation bar
+            .themedAppBackground()  // Apply design system background (Griege 050)
         }
+        .tint(DesignSystemGlobal.BrandBrand300)  // Brand orange for tappable elements
     }
 }
 

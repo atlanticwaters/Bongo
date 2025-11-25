@@ -37,7 +37,7 @@ struct ColorAndGradientView: View {
                                     .font(.body)
                                 Spacer()
                                 RoundedRectangle(cornerRadius: 8)
-                                    .fill(.blue)
+                                    .fill(DesignSystemGlobal.BrandBrand300)  // Brand orange
                                     .frame(width: 60, height: 40)
                             }
                             .padding(12)
@@ -50,7 +50,7 @@ struct ColorAndGradientView: View {
                                     .font(.body)
                                 Spacer()
                                 RoundedRectangle(cornerRadius: 8)
-                                    .fill(.gray)
+                                    .fill(DesignSystemGlobal.GreigeGreige500)  // Neutral gray
                                     .frame(width: 60, height: 40)
                             }
                             .padding(12)
@@ -63,7 +63,7 @@ struct ColorAndGradientView: View {
                                     .font(.body)
                                 Spacer()
                                 RoundedRectangle(cornerRadius: 8)
-                                    .fill(.green)
+                                    .fill(DesignSystemGlobal.BottleGreenBottleGreen500)  // Success green
                                     .frame(width: 60, height: 40)
                             }
                             .padding(12)
@@ -76,7 +76,7 @@ struct ColorAndGradientView: View {
                                     .font(.body)
                                 Spacer()
                                 RoundedRectangle(cornerRadius: 8)
-                                    .fill(.orange)
+                                    .fill(DesignSystemGlobal.LemonLemon100)  // Warning yellow
                                     .frame(width: 60, height: 40)
                             }
                             .padding(12)
@@ -89,7 +89,7 @@ struct ColorAndGradientView: View {
                                     .font(.body)
                                 Spacer()
                                 RoundedRectangle(cornerRadius: 8)
-                                    .fill(.red)
+                                    .fill(DesignSystemGlobal.CinnabarCinnabar500)  // Error red
                                     .frame(width: 60, height: 40)
                             }
                             .padding(12)
@@ -97,9 +97,7 @@ struct ColorAndGradientView: View {
                             .cornerRadius(8)
                         }
                     }
-                    .padding()
-                    .background(.gray.opacity(0.05))
-                    .cornerRadius(12)
+                    .themedContainer()  // Use themed card background (Griege 200)
 
                     // MARK: Gradient Examples
                     VStack(spacing: 12) {
@@ -117,9 +115,9 @@ struct ColorAndGradientView: View {
                                 .fill(
                                     LinearGradient(
                                         gradient: Gradient(colors: [
-                                            .blue.opacity(0.8),
-                                            .purple.opacity(0.8),
-                                            .pink.opacity(0.8)
+                                            DesignSystemGlobal.MoonlightMoonlight500.opacity(0.8),  // Blue
+                                            DesignSystemGlobal.BrandBrand500.opacity(0.9),  // Orange
+                                            DesignSystemGlobal.MoonlightMoonlight900.opacity(0.9)  // Pink-red
                                         ]),
                                         startPoint: .topLeading,
                                         endPoint: .bottomTrailing
@@ -167,9 +165,7 @@ struct ColorAndGradientView: View {
                                 .frame(height: 100)
                         }
                     }
-                    .padding()
-                    .background(.gray.opacity(0.05))
-                    .cornerRadius(12)
+                    .themedContainer()  // Use themed card background (Griege 200)
 
                     // MARK: Opacity and Transparency
                     VStack(spacing: 12) {
@@ -184,7 +180,7 @@ struct ColorAndGradientView: View {
                                     .font(.body)
                                 Spacer()
                                 RoundedRectangle(cornerRadius: 8)
-                                    .fill(.blue.opacity(opacity))
+                                    .fill(DesignSystemGlobal.CinnabarCinnabar500.opacity(opacity))
                                     .frame(width: 60, height: 40)
                             }
                             .padding(12)
@@ -192,9 +188,7 @@ struct ColorAndGradientView: View {
                             .cornerRadius(8)
                         }
                     }
-                    .padding()
-                    .background(.gray.opacity(0.05))
-                    .cornerRadius(12)
+                    .themedContainer()  // Use themed card background (Griege 200)
 
                     // MARK: Color Mode Indicator
                     VStack(spacing: 12) {
@@ -216,14 +210,13 @@ struct ColorAndGradientView: View {
                         .background(.regularMaterial)
                         .cornerRadius(12)
                     }
-                    .padding()
-                    .background(.gray.opacity(0.05))
-                    .cornerRadius(12)
+                    .themedContainer()  // Use themed card background (Griege 200)
                 }
                 .padding()
             }
             .navigationTitle("Colors & Gradients")
         }
+        .tint(DesignSystemGlobal.BrandBrand300)  // Brand orange for tappable elements
     }
 }
 

@@ -30,6 +30,7 @@ struct DesignSystemShowcaseView: View {
             }
             .navigationTitle("Design System")
         }
+        .tint(DesignSystemGlobal.BrandBrand300)
     }
 
     // MARK: - Sections

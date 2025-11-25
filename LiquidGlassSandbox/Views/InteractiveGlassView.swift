@@ -4,6 +4,9 @@ import SwiftUI
 // Showcases interactive components that respond to user input with smooth animations
 struct InteractiveGlassView: View {
 
+    // MARK: - Environment
+    @Environment(\.colorScheme) var colorScheme
+    
     // MARK: - State Properties
     @State private var isPressed = false
     @State private var selectedTab: Int = 0
@@ -18,6 +21,7 @@ struct InteractiveGlassView: View {
                     // MARK: Header
                     Text("Interactive Glass Components")
                         .font(.system(size: 28, weight: .bold))
+                        .foregroundStyle(Color.textPrimary(for: colorScheme))
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding()
 
@@ -25,6 +29,7 @@ struct InteractiveGlassView: View {
                     VStack(spacing: 12) {
                         Text("Glass Buttons")
                             .font(.headline)
+                            .foregroundStyle(Color.textPrimary(for: colorScheme))
                             .frame(maxWidth: .infinity, alignment: .leading)
 
                         VStack(spacing: 12) {
@@ -37,8 +42,7 @@ struct InteractiveGlassView: View {
                                 }
                                 .frame(maxWidth: .infinity)
                                 .padding(16)
-                                .foregroundColor(.white)
-                            }
+                                .foregroundStyle(AppTheme.brandColor(for: colorScheme))                            }
                             .buttonStyle(.glass)
                             // Add scale animation on press
                             .scaleEffect(isPressed ? 0.95 : 1.0)
@@ -62,8 +66,8 @@ struct InteractiveGlassView: View {
                                 .frame(maxWidth: .infinity)
                                 .padding(16)
                                 .background(.thinMaterial)
-                                .foregroundColor(.blue)
-                                .cornerRadius(12)
+                                .foregroundStyle(AppTheme.brandColor(for: colorScheme))
+                                .cornerRadius(32)
                             }
 
                             // Tertiary glass button
@@ -77,34 +81,36 @@ struct InteractiveGlassView: View {
                                 .padding(16)
                                 .background(.ultraThinMaterial)
                                 .foregroundColor(.red)
-                                .cornerRadius(12)
+                                .cornerRadius(32)
                             }
                         }
                     }
                     .padding()
-                    .background(.gray.opacity(0.05))
+                    .background(AppTheme.cardBackground(for: colorScheme).opacity(0.5))
                     .cornerRadius(12)
 
                     // MARK: Toggle with Glass Background
                     VStack(spacing: 12) {
                         Text("Interactive Controls")
                             .font(.headline)
+                            .foregroundStyle(Color.textPrimary(for: colorScheme))
                             .frame(maxWidth: .infinity, alignment: .leading)
 
                         HStack {
                             VStack(alignment: .leading, spacing: 4) {
                                 Text("Enable Feature")
                                     .font(.headline)
+                                    .foregroundStyle(Color.textPrimary(for: colorScheme))
                                 Text("Toggle to activate")
                                     .font(.caption)
-                                    .foregroundColor(.gray)
+                                    .foregroundStyle(Color.textSecondary(for: colorScheme))
                             }
 
                             Spacer()
 
                             // Toggle switch with glass background
                             Toggle("", isOn: $toggleValue)
-                                .tint(.blue)  // Color when enabled
+                                .tint(AppTheme.brandColor(for: colorScheme))
                         }
                         .padding(12)
                         .background(.thinMaterial)
@@ -114,50 +120,51 @@ struct InteractiveGlassView: View {
                         if toggleValue {
                             Text("Feature is now enabled!")
                                 .font(.body)
+                                .foregroundStyle(Color.textPrimary(for: colorScheme))
                                 .frame(maxWidth: .infinity)
                                 .padding(12)
                                 .background(.regularMaterial)
-                                .foregroundColor(.green)
                                 .cornerRadius(12)
                                 // Transition: fades in smoothly
                                 .transition(.opacity)
                         }
                     }
                     .padding()
-                    .background(.gray.opacity(0.05))
+                    .background(AppTheme.cardBackground(for: colorScheme).opacity(0.5))
                     .cornerRadius(12)
 
                     // MARK: Slider with Glass Background
                     VStack(spacing: 12) {
                         Text("Slider Control")
                             .font(.headline)
+                            .foregroundStyle(Color.textPrimary(for: colorScheme))
                             .frame(maxWidth: .infinity, alignment: .leading)
 
                         VStack(spacing: 12) {
                             // Display current value
                             Text("Value: \(String(format: "%.0f%%", sliderValue * 100))")
                                 .font(.headline)
-                                .frame(maxWidth: .infinity)
+                                .foregroundStyle(Color.textPrimary(for: colorScheme))    .frame(maxWidth: .infinity)
                                 .padding(12)
-                                .foregroundColor(.white)
                                 .glassEffect(in: .rect(cornerRadius: 8))
 
                             // Interactive slider
                             Slider(value: $sliderValue, in: 0...1)
-                                .tint(.blue)  // Track color
+                                .tint(AppTheme.brandColor(for: colorScheme))
                                 .padding()
                                 .background(.thinMaterial)
                                 .cornerRadius(12)
                         }
                     }
                     .padding()
-                    .background(.gray.opacity(0.05))
+                    .background(AppTheme.cardBackground(for: colorScheme).opacity(0.5))
                     .cornerRadius(12)
 
                     // MARK: Tab Navigation with Glass
                     VStack(spacing: 12) {
                         Text("Segmented Tabs")
                             .font(.headline)
+                            .foregroundStyle(Color.textPrimary(for: colorScheme))
                             .frame(maxWidth: .infinity, alignment: .leading)
 
                         // Custom segmented control using HStack and buttons
@@ -172,8 +179,10 @@ struct InteractiveGlassView: View {
                                         .font(.headline)
                                         .frame(maxWidth: .infinity)
                                         .padding(12)
-                                        .foregroundColor(
-                                            selectedTab == index ? .white : .blue
+                                        .foregroundStyle(
+                                            selectedTab == index 
+                                                ? (Color.textPrimary(for: colorScheme))
+                                                : AppTheme.brandColor(for: colorScheme)
                                         )
                                         .background(
                                             Group {
@@ -194,12 +203,15 @@ struct InteractiveGlassView: View {
                             if selectedTab == 0 {
                                 Text("Overview Content")
                                     .font(.body)
+                                    .foregroundStyle(Color.textPrimary(for: colorScheme))
                             } else if selectedTab == 1 {
                                 Text("Details Content")
                                     .font(.body)
+                                    .foregroundStyle(Color.textPrimary(for: colorScheme))
                             } else {
                                 Text("More Content")
                                     .font(.body)
+                                    .foregroundStyle(Color.textPrimary(for: colorScheme))
                             }
                         }
                         .frame(maxWidth: .infinity)
@@ -209,17 +221,25 @@ struct InteractiveGlassView: View {
                         .transition(.opacity)
                     }
                     .padding()
-                    .background(.gray.opacity(0.05))
+                    .background(AppTheme.cardBackground(for: colorScheme).opacity(0.5))
                     .cornerRadius(12)
                 }
                 .padding()
             }
             .navigationTitle("Interactive Glass")
+            .themedAppBackground()
         }
+        .tint(AppTheme.brandColor(for: colorScheme))
     }
 }
 
 // MARK: - Preview
-#Preview {
+#Preview("Light Mode") {
     InteractiveGlassView()
+        .preferredColorScheme(.light)
+}
+
+#Preview("Dark Mode") {
+    InteractiveGlassView()
+        .preferredColorScheme(.dark)
 }
