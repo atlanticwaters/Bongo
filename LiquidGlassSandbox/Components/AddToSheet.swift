@@ -160,6 +160,7 @@ struct AddToSheet: View {
             
             // Product title
             VStack(alignment: .leading, spacing: DS.Spacing1) {
+<<<<<<< HEAD
                 Text(product.brand)
                     .font(.system(size: DS.FontFontSizeBodySm, weight: .bold))
                     .foregroundStyle(textColor)
@@ -168,6 +169,9 @@ struct AddToSheet: View {
                 +
                 Text(product.name)
                     .font(.system(size: DS.FontFontSizeBodySm, weight: .regular))
+=======
+                Text("\(Text(product.brand).font(.system(size: DS.FontFontSizeBodySm, weight: .bold))) \(Text(product.name).font(.system(size: DS.FontFontSizeBodySm, weight: .regular)))")
+>>>>>>> 1d16ebf (Add .gitignore to exclude .DS_Store and Xcode user state files)
                     .foregroundStyle(textColor)
             }
             .lineLimit(3)
