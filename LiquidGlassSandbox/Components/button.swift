@@ -2,14 +2,6 @@ import SwiftUI
 
 // MARK: - ButtondemoView
 
-enum ButtondemoSize: String, CaseIterable {
-    case sm = "Sm"
-}
-
-enum ButtondemoStyle: String, CaseIterable {
-    case orange_filled = "Orange Filled"
-}
-
 enum ButtondemoState: String, CaseIterable {
     case `default` = "Default"
     case active_pressed = "Active / Pressed"
@@ -18,78 +10,90 @@ enum ButtondemoState: String, CaseIterable {
     case inactive = "Inactive"
 }
 
+enum ButtondemoStyle: String, CaseIterable {
+    case orange_filled = "Orange Filled"
+}
+
 struct ButtondemoView: View {
     var label: String
     var action: () -> Void
     var state: ButtondemoState = .`default`
-    var size: ButtondemoSize = .sm
-    var type: ButtondemoStyle = .orange_filled
+    var size: DesignSystemGlobal.ButtonSize = .md
+    var style: ButtondemoStyle = .orange_filled
+    var width: DesignSystemGlobal.ButtonWidth = .fitContent
+    var hasBorder: Bool = true  // ← ADDED
+    
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         Button(action: action) {
             Text(label)
-                .font(.system(size: fontSize, weight: fontWeight))
+                .font(.system(size: size.fontSize, weight: fontWeight))
                 .foregroundStyle(textColor)
+                .frame(maxWidth: width == .fullWidth ? .infinity : nil)
         }
-        .padding(.horizontal, horizontalPadding)
-        .padding(.vertical, verticalPadding)
+        .padding(.horizontal, size.horizontalPadding)
+        .frame(height: size.height)
         .background(backgroundColor)
-        .cornerRadius(cornerRadius)
+        .cornerRadius(size.cornerRadius)
         .overlay(
-            RoundedRectangle(cornerRadius: cornerRadius)
-                .stroke(borderColor, lineWidth: borderWidth)
+            Group {
+                if hasBorder {  // ← CHANGED
+                    RoundedRectangle(cornerRadius: size.cornerRadius)
+                        .stroke(borderColor, lineWidth: size.borderWidth)
+                }
+            }
         )
-        .disabled(state == .inactive || state == .disabled)
+        .disabled(state == .inactive)
     }
 
     private var backgroundColor: Color {
         switch state {
-        case .`default`: return DesignSystemGlobal.BrandBrand300
-        case .active_pressed: return DesignSystemGlobal.BrandBrand300
-        case .loading: return DesignSystemGlobal.BrandBrand300
-        case .success: return DesignSystemGlobal.BrandBrand300
-        case .inactive: return DesignSystemGlobal.BackgroundButtonColorBrandFilledInactive
+        case .`default`:
+            return colorScheme == .dark ? DesignSystemDarkLarge.BrandBrand300 : DesignSystemLightLarge.BrandBrand300
+        case .active_pressed:
+            return colorScheme == .dark ? DesignSystemDarkLarge.BrandBrand300 : DesignSystemLightLarge.BrandBrand300
+        case .loading:
+            return colorScheme == .dark ? DesignSystemDarkLarge.BrandBrand300 : DesignSystemLightLarge.BrandBrand300
+        case .success:
+            return colorScheme == .dark ? DesignSystemDarkLarge.BrandBrand300 : DesignSystemLightLarge.BrandBrand300
+        case .inactive:
+            return colorScheme == .dark ? DesignSystemDarkLarge.BackgroundButtonColorBrandFilledInactive : DesignSystemLightLarge.BackgroundButtonColorBrandFilledInactive
         }
     }
 
     private var textColor: Color {
         switch state {
-        case .`default`: return DesignSystemGlobal.TextButtonColorOrangeFilledDefault
-        case .active_pressed: return DesignSystemGlobal.TextButtonColorOrangeFilledDefault
-        case .loading: return DesignSystemGlobal.TextButtonColorBrandFilledDefault
-        case .success: return DesignSystemGlobal.TextButtonColorBrandFilledDefault
-        case .inactive: return DesignSystemGlobal.TextButtonColorBrandFilledPressed
+        case .`default`:
+            return colorScheme == .dark ? DesignSystemDarkLarge.TextButtonColorOrangeFilledDefault : DesignSystemLightLarge.TextButtonColorOrangeFilledDefault
+        case .active_pressed:
+            return colorScheme == .dark ? DesignSystemDarkLarge.TextButtonColorOrangeFilledDefault : DesignSystemLightLarge.TextButtonColorOrangeFilledDefault
+        case .loading:
+            return colorScheme == .dark ? DesignSystemDarkLarge.TextButtonColorOrangeFilledDefault : DesignSystemLightLarge.TextButtonColorOrangeFilledDefault
+        case .success:
+            return colorScheme == .dark ? DesignSystemDarkLarge.TextButtonColorOrangeFilledDefault : DesignSystemLightLarge.TextButtonColorOrangeFilledDefault
+        case .inactive:
+            return colorScheme == .dark ? DesignSystemDarkLarge.TextButtonColorOrangeFilledInactive : DesignSystemLightLarge.TextButtonColorOrangeFilledInactive
         }
     }
 
     private var borderColor: Color {
         switch state {
-        case .`default`: return DesignSystemGlobal.BorderButtonColorDefault
-        case .active_pressed: return DesignSystemGlobal.BorderButtonColorFocus
-        case .loading: return DesignSystemGlobal.BorderButtonColorDefault
-        case .success: return DesignSystemGlobal.BorderButtonColorDefault
-        case .inactive: return DesignSystemGlobal.BorderButtonColorFocus
+        case .`default`:
+            return colorScheme == .dark ? DesignSystemDarkLarge.BorderButtonColorDefault : DesignSystemLightLarge.BorderButtonColorDefault
+        case .active_pressed:
+            return colorScheme == .dark ? DesignSystemDarkLarge.BorderButtonColorFocus : DesignSystemLightLarge.BorderButtonColorFocus
+        case .loading:
+            return colorScheme == .dark ? DesignSystemDarkLarge.BorderButtonColorDefault : DesignSystemLightLarge.BorderButtonColorDefault
+        case .success:
+            return colorScheme == .dark ? DesignSystemDarkLarge.BorderButtonColorDefault : DesignSystemLightLarge.BorderButtonColorDefault
+        case .inactive:
+            return colorScheme == .dark ? DesignSystemDarkLarge.BorderButtonColorFocus : DesignSystemLightLarge.BorderButtonColorFocus
         }
-    }
-
-    private var cornerRadius: CGFloat {
-        DesignSystemGlobal.BorderRadiusLg
-    }
-
-    private var fontSize: CGFloat {
-        DesignSystemGlobal.FontFontSizeBodySm
     }
 
     private var fontWeight: Font.Weight {
         .bold
-    }
-
-    private var horizontalPadding: CGFloat {
-        67
-    }
-
-    private var verticalPadding: CGFloat {
-        DesignSystemGlobal.Spacing10
     }
 
     private var borderWidth: CGFloat {
@@ -97,7 +101,31 @@ struct ButtondemoView: View {
     }
 }
 
-#Preview {
+// ← REMOVED: ButtondemoSize enum (no longer needed)
+// ← REMOVED: private var cornerRadius (now from size token)
+// ← REMOVED: private var fontSize (now from size token)
+// ← REMOVED: private var horizontalPadding (now from size token)
+// ← REMOVED: private var verticalPadding (replaced by fixed height)
+
+#Preview("All Sizes") {
+    VStack(spacing: DesignSystemGlobal.Spacing4) {
+        ButtondemoView(label: "Small", action: {}, size: .sm)
+        ButtondemoView(label: "Medium", action: {}, size: .md)
+        ButtondemoView(label: "Large", action: {}, size: .lg)
+        ButtondemoView(label: "Extra Large", action: {}, size: .xl)
+        ButtondemoView(label: "2XL", action: {}, size: .xxl)
+    }
+    .padding()
+}
+#Preview("Full Width") {
+    VStack(spacing: DesignSystemGlobal.Spacing4) {
+        ButtondemoView(label: "Full Width Medium", action: {}, size: .md, width: .fullWidth)
+        ButtondemoView(label: "Full Width Large", action: {}, size: .lg, width: .fullWidth)
+    }
+    .padding()
+}
+
+#Preview("States") {
     VStack(spacing: DesignSystemGlobal.Spacing4) {
         ButtondemoView(label: "Default", action: {}, state: .`default`)
         ButtondemoView(label: "Active / Pressed", action: {}, state: .active_pressed)

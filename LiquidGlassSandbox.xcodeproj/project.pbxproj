@@ -22,6 +22,12 @@
 		10F8C0782ED606DC004ECA3E /* ThemeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F8C0612ED5F712004ECA3E /* ThemeExtensions.swift */; };
 		10F8C07A2ED60909004ECA3E /* THEME_MODE_IMPLEMENTATION.md in Resources */ = {isa = PBXBuildFile; fileRef = 10F8C0792ED60909004ECA3E /* THEME_MODE_IMPLEMENTATION.md */; };
 		10F8C0802ED6180F004ECA3E /* ThemeColorsPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F8C0652ED5F84D004ECA3E /* ThemeColorsPreview.swift */; };
+		AD13E9112EDB5A5F00998EEA /* Morph_Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13E9102EDB5A5600998EEA /* Morph_Menu.swift */; };
+		AD13E9132EDB5E1D00998EEA /* Bottom_Nav.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13E9122EDB5E0F00998EEA /* Bottom_Nav.swift */; };
+		AD13E9152EDBC26A00998EEA /* SearchSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13E9142EDBC26000998EEA /* SearchSheet.swift */; };
+		AD13E9172EDBE2D700998EEA /* ProductSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13E9162EDBE2CF00998EEA /* ProductSystem.swift */; };
+		AD13E91D2EDBE30800998EEA /* AddToSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13E9182EDBE30800998EEA /* AddToSheet.swift */; };
+		AD4DF3512EDA38FD006398D3 /* button.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DF34F2EDA38FD006398D3 /* button.swift */; };
 		D40C549CE4A1451CAAFC21AB /* ThemeShowcaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3531046534B9094834946 /* ThemeShowcaseView.swift */; };
 		E9B0C8A1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8B1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift */; };
 		E9B0C8A2291ABC1200D34F02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0C8B2291ABC1200D34F02 /* ContentView.swift */; };
@@ -70,7 +76,6 @@
 		10F8C0642ED5F82B004ECA3E /* THEME_CHANGES_SUMMARY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = THEME_CHANGES_SUMMARY.md; sourceTree = "<group>"; };
 		10F8C0652ED5F84D004ECA3E /* ThemeColorsPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorsPreview.swift; sourceTree = "<group>"; };
 		10F8C0662ED5F87C004ECA3E /* THEME_QUICK_REFERENCE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = THEME_QUICK_REFERENCE.md; sourceTree = "<group>"; };
-
 		10F8C0682ED5FB01004ECA3E /* DesignSystemDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemDemoView.swift; sourceTree = "<group>"; };
 		10F8C0692ED5FB5C004ECA3E /* DESIGN_SYSTEM_INTEGRATION.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DESIGN_SYSTEM_INTEGRATION.md; sourceTree = "<group>"; };
 		10F8C06A2ED5FB7E004ECA3E /* DESIGN_SYSTEM_QUICK_REFERENCE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DESIGN_SYSTEM_QUICK_REFERENCE.md; sourceTree = "<group>"; };
@@ -89,6 +94,12 @@
 		10F8C07F2ED6169F004ECA3E /* COMPLETE_FIX_SUMMARY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = COMPLETE_FIX_SUMMARY.md; sourceTree = "<group>"; };
 		1F4DF7A4AD8A410C8C9C0D9F /* LiquidGlassSandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidGlassSandboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4931663E70A1441884C7FA63 /* LiquidGlassSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquidGlassSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD13E9102EDB5A5600998EEA /* Morph_Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Morph_Menu.swift; sourceTree = "<group>"; };
+		AD13E9122EDB5E0F00998EEA /* Bottom_Nav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bottom_Nav.swift; sourceTree = "<group>"; };
+		AD13E9142EDBC26000998EEA /* SearchSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSheet.swift; sourceTree = "<group>"; };
+		AD13E9162EDBE2CF00998EEA /* ProductSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSystem.swift; sourceTree = "<group>"; };
+		AD13E9182EDBE30800998EEA /* AddToSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToSheet.swift; sourceTree = "<group>"; };
+		AD4DF34F2EDA38FD006398D3 /* button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = button.swift; sourceTree = "<group>"; };
 		B367D6077AEB478C891230CE /* LiquidGlassSandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidGlassSandboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE3531046534B9094834946 /* ThemeShowcaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeShowcaseView.swift; sourceTree = "<group>"; };
 		E9B0C8B1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassSandboxApp.swift; sourceTree = "<group>"; };
@@ -133,6 +144,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD4DF3502EDA38FD006398D3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AD13E9162EDBE2CF00998EEA /* ProductSystem.swift */,
+				AD13E9142EDBC26000998EEA /* SearchSheet.swift */,
+				AD13E9122EDB5E0F00998EEA /* Bottom_Nav.swift */,
+				AD4DF34F2EDA38FD006398D3 /* button.swift */,
+				AD13E9102EDB5A5600998EEA /* Morph_Menu.swift */,
+				AD13E9182EDBE30800998EEA /* AddToSheet.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		E9B0C8D1291ABC1200D34F40 = {
 			isa = PBXGroup;
 			children = (
@@ -146,7 +170,6 @@
 				10F8C0642ED5F82B004ECA3E /* THEME_CHANGES_SUMMARY.md */,
 				10F8C0652ED5F84D004ECA3E /* ThemeColorsPreview.swift */,
 				10F8C0662ED5F87C004ECA3E /* THEME_QUICK_REFERENCE.md */,
-
 				10F8C0682ED5FB01004ECA3E /* DesignSystemDemoView.swift */,
 				10F8C0692ED5FB5C004ECA3E /* DESIGN_SYSTEM_INTEGRATION.md */,
 				10F8C06A2ED5FB7E004ECA3E /* DESIGN_SYSTEM_QUICK_REFERENCE.md */,
@@ -167,6 +190,7 @@
 				E9B0C8D6291ABC1200D34F45 /* Views */,
 				E9B0C8D7291ABC1200D34F46 /* DesignSystem */,
 				E9B0C8D8291ABC1200D34F47 /* Resources */,
+				AD4DF3502EDA38FD006398D3 /* Components */,
 			);
 			path = LiquidGlassSandbox;
 			sourceTree = "<group>";
@@ -382,18 +406,24 @@
 			files = (
 				10F8C0772ED606B9004ECA3E /* DesignSystemDemoView.swift in Sources */,
 				10F8C06E2ED5FF60004ECA3E /* DesignSystemTokenInspector.swift in Sources */,
+				AD13E9132EDB5E1D00998EEA /* Bottom_Nav.swift in Sources */,
 				E9B0C8A1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift in Sources */,
 				E9B0C8A2291ABC1200D34F02 /* ContentView.swift in Sources */,
 				E9B0C8A3291ABC1200D34F03 /* GlassComponentsView.swift in Sources */,
 				10F8C0782ED606DC004ECA3E /* ThemeExtensions.swift in Sources */,
 				105879472ED5073900B00087 /* AppBackground.swift in Sources */,
 				E9B0C8A4291ABC1200D34F04 /* AdaptiveUIView.swift in Sources */,
+				AD4DF3512EDA38FD006398D3 /* button.swift in Sources */,
 				E9B0C8A5291ABC1200D34F05 /* DynamicBlurView.swift in Sources */,
+				AD13E9152EDBC26A00998EEA /* SearchSheet.swift in Sources */,
+				AD13E9172EDBE2D700998EEA /* ProductSystem.swift in Sources */,
 				E9B0C8A6291ABC1200D34F06 /* InteractiveGlassView.swift in Sources */,
 				E9B0C8A7291ABC1200D34F07 /* ColorAndGradientView.swift in Sources */,
 				E9B0C8A8291ABC1200D34F08 /* DesignSystemGlobal.swift in Sources */,
 				E9B0C8A9291ABC1200D34F09 /* DesignSystemLightLarge.swift in Sources */,
 				E9B0C8AA291ABC1200D34F0A /* DesignSystemLightMedium.swift in Sources */,
+				AD13E9112EDB5A5F00998EEA /* Morph_Menu.swift in Sources */,
+				AD13E91D2EDBE30800998EEA /* AddToSheet.swift in Sources */,
 				E9B0C8AB291ABC1200D34F0B /* DesignSystemDarkLarge.swift in Sources */,
 				105879492ED5076100B00087 /* CustomFonts.swift in Sources */,
 				105879452ED5038100B00087 /* ThemeShowcaseView 2.swift in Sources */,

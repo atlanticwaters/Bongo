@@ -364,7 +364,7 @@ public struct DesignSystemGlobal {
     public static let Shadow50 = Color(red: 0, green: 0, blue: 0, opacity: 0.05)
     public static let Shadow500 = Color(red: 0, green: 0, blue: 0, opacity: 0.24)
     public static let Spacing0 = CGFloat(0) /** 0 */
-    public static let Spacing1 = CGFloat(4) /** 4 */
+    public static let Spacing1 = CGFloat(1) /** 4 */
     public static let Spacing10 = CGFloat(40) /** 40 */
     public static let Spacing11 = CGFloat(44) /** 44 */
     public static let Spacing12 = CGFloat(48) /** 48 */
@@ -399,7 +399,6 @@ public struct DesignSystemGlobal {
     public static let Spacing4 = CGFloat(16) /** 16 */
     public static let Spacing5 = CGFloat(20) /** 20 */
     public static let Spacing6 = CGFloat(24) /** 24 */
-    public static let Spacing6px = CGFloat(6)
     public static let Spacing7 = CGFloat(28) /** 28 */
     public static let Spacing8 = CGFloat(32) /** 32 */
     public static let Spacing9 = CGFloat(36) /** 36 */
@@ -484,4 +483,59 @@ public struct DesignSystemGlobal {
     public static let TransparentWhiteTransparentWhite800 = Color(red: 1, green: 1, blue: 1, opacity: 0.7)
     public static let TransparentWhiteTransparentWhite900 = Color(red: 1, green: 1, blue: 1, opacity: 0.88)
     public static let TransparentWhiteTransparentWhite950 = Color(red: 1, green: 1, blue: 1, opacity: 0.96)
+    
+    // Here are the temp button definitions
+    
+    public struct ButtonSize {
+        public let height: CGFloat
+        public let horizontalPadding: CGFloat
+        public let cornerRadius: CGFloat
+        public let fontSize: CGFloat
+        public let borderWidth: CGFloat
+        
+        public static let sm = ButtonSize(
+            height: Spacing8,
+            horizontalPadding: Spacing3,
+            cornerRadius: Radius12,
+            fontSize: FontFontSizeBodyXs,
+            borderWidth: BorderWidthXs
+        )
+        
+        public static let md = ButtonSize(
+            height: Spacing10,
+            horizontalPadding: Spacing4,
+            cornerRadius: Radius12,
+            fontSize: FontFontSizeBodySm,
+            borderWidth: BorderWidthXs
+        )
+        
+        public static let lg = ButtonSize(
+            height: Spacing12,
+            horizontalPadding: Spacing5,
+            cornerRadius: Radius12,
+            fontSize: FontFontSizeBodyMd,
+            borderWidth: BorderWidthSm
+        )
+        
+        public static let xl = ButtonSize(
+            height: Spacing14,
+            horizontalPadding: Spacing6,
+            cornerRadius: Radius12,
+            fontSize: FontFontSizeBodyLg,
+            borderWidth: BorderWidthSm
+        )
+        
+        public static let xxl = ButtonSize(
+            height: Spacing16,
+            horizontalPadding: Spacing8,
+            cornerRadius: Radius12,
+            fontSize: FontFontSizeBodyXl,
+            borderWidth: BorderWidthMd
+        )
+    }
+    
+    public enum ButtonWidth {
+        case fitContent
+        case fullWidth
+    }
 }
