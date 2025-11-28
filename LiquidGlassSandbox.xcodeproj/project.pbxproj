@@ -70,7 +70,7 @@
 		10F8C0642ED5F82B004ECA3E /* THEME_CHANGES_SUMMARY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = THEME_CHANGES_SUMMARY.md; sourceTree = "<group>"; };
 		10F8C0652ED5F84D004ECA3E /* ThemeColorsPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorsPreview.swift; sourceTree = "<group>"; };
 		10F8C0662ED5F87C004ECA3E /* THEME_QUICK_REFERENCE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = THEME_QUICK_REFERENCE.md; sourceTree = "<group>"; };
-		10F8C0672ED5FABD004ECA3E /* ThemeExtensions 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeExtensions 2.swift"; sourceTree = "<group>"; };
+
 		10F8C0682ED5FB01004ECA3E /* DesignSystemDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemDemoView.swift; sourceTree = "<group>"; };
 		10F8C0692ED5FB5C004ECA3E /* DESIGN_SYSTEM_INTEGRATION.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DESIGN_SYSTEM_INTEGRATION.md; sourceTree = "<group>"; };
 		10F8C06A2ED5FB7E004ECA3E /* DESIGN_SYSTEM_QUICK_REFERENCE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DESIGN_SYSTEM_QUICK_REFERENCE.md; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 				10F8C0642ED5F82B004ECA3E /* THEME_CHANGES_SUMMARY.md */,
 				10F8C0652ED5F84D004ECA3E /* ThemeColorsPreview.swift */,
 				10F8C0662ED5F87C004ECA3E /* THEME_QUICK_REFERENCE.md */,
-				10F8C0672ED5FABD004ECA3E /* ThemeExtensions 2.swift */,
+
 				10F8C0682ED5FB01004ECA3E /* DesignSystemDemoView.swift */,
 				10F8C0692ED5FB5C004ECA3E /* DESIGN_SYSTEM_INTEGRATION.md */,
 				10F8C06A2ED5FB7E004ECA3E /* DESIGN_SYSTEM_QUICK_REFERENCE.md */,
