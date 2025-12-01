@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 // MARK: - Custom Font Extension
 // Provides easy access to the custom THD font family from the design system
@@ -7,15 +8,47 @@ extension Font {
     // MARK: - Display Font Family (THD LgVar Beta)
     // Used for large, attention-grabbing text like heroes and headers
     static func thdDisplay(size: CGFloat, weight: Font.Weight = .regular) -> Font {
-        let fontName = "THD LgVar Beta"
-        return .custom(fontName, size: size)
+        // Try multiple possible font names
+        let possibleNames = [
+            "THD LgVar Beta",
+            "THDLgVarBeta",
+            "THD-LgVar-Beta",
+            "THD_LgVar_Beta"
+        ]
+        
+        // Check which font is actually available
+        for fontName in possibleNames {
+            if UIFont(name: fontName, size: size) != nil {
+                return .custom(fontName, size: size)
+            }
+        }
+        
+        // Fallback to system font with appropriate weight
+        print("⚠️ THD Display font not found, using system font")
+        return .system(size: size, weight: weight, design: .default)
     }
     
     // MARK: - Informational Font Family (THD SmVar Beta)
     // Used for body text, captions, and informational content
     static func thdInformational(size: CGFloat, weight: Font.Weight = .regular) -> Font {
-        let fontName = "THD SmVar Beta"
-        return .custom(fontName, size: size)
+        // Try multiple possible font names
+        let possibleNames = [
+            "THD SmVar Beta",
+            "THDSmVarBeta",
+            "THD-SmVar-Beta",
+            "THD_SmVar_Beta"
+        ]
+        
+        // Check which font is actually available
+        for fontName in possibleNames {
+            if UIFont(name: fontName, size: size) != nil {
+                return .custom(fontName, size: size)
+            }
+        }
+        
+        // Fallback to system font with appropriate weight
+        print("⚠️ THD Informational font not found, using system font")
+        return .system(size: size, weight: weight, design: .default)
     }
     
     // MARK: - Design System Typography Scale
@@ -97,19 +130,55 @@ extension Font {
 // Call this early in your app lifecycle to register custom fonts
 struct CustomFontRegistration {
     static func registerFonts() {
-        // Font names from the design system
-        let fontNames = [
-            "THD LgVar Beta",
-            "THD SmVar Beta"
+        // Possible font file names to try
+        let fontFileNames = [
+            "THD-LgVar-Beta",
+            "THD-SmVar-Beta",
+            "THDLgVarBeta",
+            "THDSmVarBeta",
+            "THD_LgVar_Beta",
+            "THD_SmVar_Beta"
         ]
         
-        // Note: In a real app, you would register fonts from the bundle here
-        // This is a placeholder since we're working with design tokens
-        // Actual implementation would use CTFontManagerRegisterFontsForURL
+        let extensions = ["ttf", "otf"]
         
-        for fontName in fontNames {
-            print("Custom font registered: \(fontName)")
+        for fontFileName in fontFileNames {
+            for ext in extensions {
+                if let fontURL = Bundle.main.url(forResource: fontFileName, withExtension: ext) {
+                    var errorRef: Unmanaged<CFError>?
+                    let success = CTFontManagerRegisterFontsForURL(fontURL as CFURL, .process, &errorRef)
+                    
+                    if success {
+                        print("✅ Successfully registered font: \(fontFileName).\(ext)")
+                    } else if let error = errorRef?.takeRetainedValue() {
+                        print("⚠️ Failed to register font \(fontFileName).\(ext): \(error)")
+                    }
+                }
+            }
         }
+        
+        // List all available fonts for debugging
+        print("\n📝 All available fonts in the system:")
+        for family in UIFont.familyNames.sorted() {
+            print("  Family: \(family)")
+            for name in UIFont.fontNames(forFamilyName: family) {
+                print("    - \(name)")
+            }
+        }
+        print("\n")
+    }
+    
+    // Helper to check if custom fonts are available
+    static func areCustomFontsAvailable() -> Bool {
+        let lgVarAvailable = UIFont(name: "THD LgVar Beta", size: 12) != nil ||
+                            UIFont(name: "THDLgVarBeta", size: 12) != nil ||
+                            UIFont(name: "THD-LgVar-Beta", size: 12) != nil
+        
+        let smVarAvailable = UIFont(name: "THD SmVar Beta", size: 12) != nil ||
+                            UIFont(name: "THDSmVarBeta", size: 12) != nil ||
+                            UIFont(name: "THD-SmVar-Beta", size: 12) != nil
+        
+        return lgVarAvailable && smVarAvailable
     }
 }
 

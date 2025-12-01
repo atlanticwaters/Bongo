@@ -67,10 +67,9 @@ struct MorphingTabBar: View {
         .padding(.horizontal, horizontalPadding)
         .padding(.top, verticalPadding)
         .padding(.bottom, DS.Spacing0) // Content sits above safe area
-        .background(
-            DS.BackgroundSurfaceColorGreige
-                .ignoresSafeArea(edges: .bottom) // Background extends into safe area
-        )
+        //.background(
+            //DS.BackgroundSurfaceColorGreige
+                //.ignoresSafeArea(edges: .bottom) // Background extends into safe area
     }
     
     // MARK: - Tab Pill Container
@@ -148,14 +147,14 @@ struct MorphingTabBar: View {
         Spacer()
         MorphingTabBar()
     }
-    .background(DS.BackgroundSurfaceColorGreige)
+   // .background(DS.BackgroundSurfaceColorGreige)
 }
 
 // MARK: - Preview with Full Screen Context
 #Preview("Full Screen") {
     ZStack {
-        DS.BackgroundSurfaceColorGreige
-            .ignoresSafeArea()
+        //DS.BackgroundSurfaceColorGreige
+            //.ignoresSafeArea()
         
         VStack(spacing: 0) {
             // Header at top

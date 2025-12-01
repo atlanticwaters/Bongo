@@ -74,7 +74,8 @@ struct MorphingNavHeader: View {
                 .frame(width: buttonSize, height: buttonSize)
                 .background(
                     Circle()
-                        .fill(backgroundColor)
+                        .fill(.clear)
+                        .glassEffect(.regular, in: .circle)
                         .shadow(color: shadowColor, radius: shadowRadius, x: 0, y: shadowY)
                 )
         }
@@ -161,7 +162,8 @@ struct MorphingNavHeader: View {
         .frame(height: buttonSize)
         .background(
             Capsule()
-                .fill(backgroundColor)
+                .fill(.clear)
+                .glassEffect(.regular, in: .capsule)
                 .shadow(color: shadowColor, radius: shadowRadius, x: 0, y: shadowY)
         )
         // This matches with the search button's geometry
@@ -192,7 +194,8 @@ struct CircleButton: View {
                 .frame(width: buttonSize, height: buttonSize)
                 .background(
                     Circle()
-                        .fill(backgroundColor)
+                        .fill(.clear)
+                        .glassEffect(.regular, in: .circle)
                         .shadow(color: shadowColor, radius: shadowRadius, x: 0, y: shadowY)
                 )
         }
@@ -206,5 +209,5 @@ struct CircleButton: View {
         MorphingNavHeader()
         Spacer()
     }
-    .background(DesignSystemGlobal.BackgroundSurfaceColorGreige)
+   // .background(DesignSystemGlobal.BackgroundSurfaceColorGreige)
 }

@@ -17,22 +17,10 @@ private typealias DS = DesignSystemGlobal
 // - ProductListingPage (main view)
 
 // MARK: - =============================================
-// MARK: - SORT OPTIONS
-// MARK: - =============================================
-
-enum SortOption: String, CaseIterable {
-    case topRated = "Top Rated"
-    case priceLowToHigh = "Price: Low to High"
-    case priceHighToLow = "Price: High to Low"
-    case bestSelling = "Best Selling"
-    case newest = "Newest"
-}
-
-// MARK: - =============================================
 // MARK: - FILTER CHIP COMPONENT
 // MARK: - =============================================
 
-struct FilterChip: View {
+private struct FilterChip: View {
     let title: String
     let isSelected: Bool
     let action: () -> Void
@@ -110,50 +98,42 @@ struct ProductListingPage: View {
             DS.BackgroundSurfaceColorGreige
                 .ignoresSafeArea()
             
-            VStack(spacing: 0) {
-                // Top Navigation - Morph_Menu
+            // Scrollable Content - extends edge to edge
+            ScrollView {
+                VStack(alignment: .leading, spacing: DS.Spacing4) {
+                    // Category header
+                    categoryHeader
+                    
+                    // Filter chips
+                    filterChipsRow
+                    
+                    // Results bar (count + sort + view toggle)
+                    resultsBar
+                    
+                    // Product list using ProductCard from ProductSystem
+                    productList
+                }
+                .padding(.horizontal, DS.Spacing4)
+            }
+            .safeAreaInset(edge: .top) {
+                // Top Navigation with Liquid Glass effect
                 MorphingNavHeader()
-                    .background(.regularMaterial)
-                    .zIndex(1)
-                
-                // Scrollable Content
-                ScrollView {
-                    VStack(alignment: .leading, spacing: DS.Spacing4) {
-                        // Category header
-                        categoryHeader
-                        
-                        // Filter chips
-                        filterChipsRow
-                        
-                        // Results bar (count + sort + view toggle)
-                        resultsBar
-                        
-                        // Product list using ProductCard from ProductSystem
-                        productList
-                        
-                        // Bottom padding to account for tab bar
-                        Spacer()
-                            .frame(height: DS.Spacing16)
-                    }
-                    .padding(.horizontal, DS.Spacing4)
-                }
-                .scrollIndicators(.hidden)
-                .safeAreaInset(edge: .top, spacing: 0) {
-                    Color.clear.frame(height: 0)
-                        .background(.ultraThinMaterial)
-                }
-                .safeAreaInset(edge: .bottom, spacing: 0) {
-                    Color.clear.frame(height: 0)
-                        .background(.ultraThinMaterial)
-                }
-                
-                // Bottom Navigation - Bottom_Nav
+                    //.background {
+                      //  Rectangle()
+                        //    .fill(.clear)
+                          //  .glassEffect(.regular, in: .rect)
+                    //}
+            }
+            .safeAreaInset(edge: .bottom) {
+                // Bottom Navigation with Liquid Glass effect
                 MorphingTabBar()
-                    .background(.regularMaterial)
-                    .zIndex(1)
+                    //.background {
+                       //Rectangle()
+                            //.fill(.clear)
+                            //.glassEffect(.regular, in: .rect)
+                    //}
             }
         }
-        .ignoresSafeArea(edges: .bottom)
         .onAppear {
             loadSampleProducts()
         }
@@ -234,15 +214,15 @@ struct ProductListingPage: View {
     private var productList: some View {
         LazyVStack(spacing: DS.Spacing4) {
             ForEach(sortedProducts) { product in
-                // Using ProductCard from ProductSystem.swift
+                // Using ProductCard from ProductCard.swift
                 ProductCard(
                     product: product,
                     onAddToCart: {
                         cartItemCount += 1
+                        print("Added \(product.name) to cart")
                     },
-                    onImageTap: {
-                        // Open lightbox
-                        print("Opening lightbox for \(product.name)")
+                    onAddToList: {
+                        print("Add \(product.name) to list...")
                     }
                 )
             }

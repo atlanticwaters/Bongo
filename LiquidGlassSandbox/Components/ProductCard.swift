@@ -1,47 +1,61 @@
 import SwiftUI
 
 // MARK: - Product Card Component
-/// A comprehensive product card component matching The Home Depot design system
-/// Based on Figma design: Keyless/B2B/BasicPod
+/// B2B Basic Pod - A product card component matching The Home Depot design system
+/// Based on Figma design: Keyless/B2B/BasicPod (node-id=20-4284)
+///
+/// This component accepts a Product model from ProductSystem.swift
+/// Layout: Horizontal card with image on left, content on right
+
 struct ProductCard: View {
     // MARK: - Properties
-    let productImage: String
-    let badgeText: String?
-    let collectionName: String
-    let productTitle: String
-    let modelNumber: String
-    let internetNumber: String
-    let storeSKU: String
-    let price: Decimal
-    let wasPrice: Decimal?
-    let savingsAmount: Decimal?
-    let savingsPercent: Int?
-    let rating: Double
-    let reviewCount: Int
-    let deliveryOption: DeliveryOption
-    let fasterDeliveryOption: FasterDeliveryOption?
-    let isSponsored: Bool
-    let availableColors: [Color]
-    let additionalColorCount: Int
-    
-    // MARK: - Nested Types
-    struct DeliveryOption {
-        let isFree: Bool
-        let date: String
-        let availableCount: Int
-    }
-    
-    struct FasterDeliveryOption {
-        let timeframe: String
-    }
+    let product: Product
+    var onAddToCart: (() -> Void)? = nil
+    var onAddToList: (() -> Void)? = nil
     
     // MARK: - Body
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            // Image Section with Badge
+        HStack(alignment: .center, spacing: 0) {
+            // LEFT COLUMN: Product Image + Color Swatches
+            leftColumn
+            
+            // RIGHT COLUMN: Product Details + Buttons
+            rightColumn
+        }
+        .background(DesignSystemGlobal.BackgroundContainerColorWhite)
+        .cornerRadius(DesignSystemGlobal.BorderRadiusXl)
+        .shadow(color: DesignSystemGlobal.ElevationLow, radius: DesignSystemGlobal.ElevationBlurRadiusBlur2, x: 0, y: DesignSystemGlobal.ElevationPositionY2)
+    }
+    
+    // MARK: - Left Column (Image + Swatches)
+    private var leftColumn: some View {
+        VStack(alignment: .center, spacing: DesignSystemGlobal.Spacing3) {
             ZStack(alignment: .topLeading) {
                 // Product Image
-                AsyncImage(url: URL(string: productImage)) { image in
+                productImageView
+                
+                // Exclusive Badge (top-left corner)
+                if product.isExclusive || product.promotionalBadge != nil {
+                    badgeStack
+                }
+            }
+            
+            // Color Swatches (if available)
+            if let colors = product.availableColors, !colors.isEmpty {
+                colorSwatches(colors: colors)
+            }
+        }
+        .padding(.leading, DesignSystemGlobal.Spacing4)
+        .padding(.top, DesignSystemGlobal.Spacing4)
+        .padding(.bottom, DesignSystemGlobal.Spacing4)
+    }
+    
+    // MARK: - Product Image
+    private var productImageView: some View {
+        Group {
+            if product.heroImage.hasPrefix("http") {
+                // Remote image URL
+                AsyncImage(url: URL(string: product.heroImage)) { image in
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -52,239 +66,287 @@ struct ProductCard: View {
                             ProgressView()
                         }
                 }
-                .frame(height: 200)
-                .frame(maxWidth: .infinity)
-                .background(DesignSystemGlobal.BackgroundContainerColorGreige)
-                
-                // Exclusive Badge
-                if let badge = badgeText {
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text("Exclusive")
-                            .font(.thdBodyXs)
-                            .fontWeight(.bold)
-                            .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
-                        
-                        Text(badge)
-                            .font(.thdBodyXs)
-                            .fontWeight(.bold)
-                            .foregroundColor(DesignSystemGlobal.BackgroundFeedbackColorSuccessAccent2)
-                    }
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 6)
-                    .background(Color.white)
-                    .cornerRadius(4)
-                    .padding(12)
-                }
+            } else {
+                // Local asset
+                Image(product.heroImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
             }
-            
-            // Content Section
-            VStack(alignment: .leading, spacing: 8) {
-                // Collection Name
-                Text(collectionName)
+        }
+        .frame(width: 160, height: 160)
+        .background(DesignSystemGlobal.BackgroundContainerColorGreige)
+    }
+    
+    // MARK: - Badge Stack
+    private var badgeStack: some View {
+        VStack(alignment: .leading, spacing: DesignSystemGlobal.Spacing1px) {
+            if product.isExclusive {
+                Text("Exclusive")
                     .font(.thdBodyXs)
                     .fontWeight(.bold)
                     .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
-                    .lineLimit(1)
-                
-                // Product Title
-                Text(productTitle)
-                    .font(.thdBodySm)
+            }
+            
+            if let promo = product.promotionalBadge {
+                Text(promo)
+                    .font(.thdBodyXs)
+                    .fontWeight(.bold)
+                    .foregroundColor(DesignSystemGlobal.BackgroundFeedbackColorSuccessAccent2)
+            }
+        }
+        .padding(.horizontal, DesignSystemGlobal.Spacing2)
+        .padding(.vertical, DesignSystemGlobal.Spacing1 + DesignSystemGlobal.Spacing1px)
+        .background(DesignSystemGlobal.BackgroundContainerColorWhite)
+        .cornerRadius(DesignSystemGlobal.BorderRadiusMd)
+        .shadow(color: DesignSystemGlobal.ElevationLowest, radius: DesignSystemGlobal.ElevationBlurRadiusBlur1 / 2, x: 0, y: DesignSystemGlobal.ElevationPositionY1)
+        .padding(DesignSystemGlobal.Spacing2)
+    }
+    
+    // MARK: - Color Swatches
+    private func colorSwatches(colors: [Product.ProductColor]) -> some View {
+        HStack(spacing: DesignSystemGlobal.Spacing2) {
+            ForEach(Array(colors.prefix(3).enumerated()), id: \.offset) { index, productColor in
+                RoundedRectangle(cornerRadius: DesignSystemGlobal.BorderRadiusMd)
+                    .fill(productColor.color)
+                    .frame(width: DesignSystemGlobal.Spacing8, height: DesignSystemGlobal.Spacing8)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: DesignSystemGlobal.BorderRadiusMd)
+                            .stroke(productColor.borderColor ?? DesignSystemGlobal.BorderInputColorDefault, lineWidth: DesignSystemGlobal.BorderWidthXs)
+                    )
+            }
+            
+            if product.additionalColorCount > 0 {
+                Text("+\(product.additionalColorCount)")
+                    .font(.thdBodyXs)
                     .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
-                    .lineLimit(2)
-                    .lineSpacing(2)
+                    .frame(width: DesignSystemGlobal.Spacing8, height: DesignSystemGlobal.Spacing8)
+            }
+        }
+    }
+    
+    // MARK: - Right Column (Details + Actions)
+    private var rightColumn: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            // Sponsored Label (if applicable)
+            if product.isSponsored {
+                Text("Sponsored")
+                    .font(.thdBodyXs)
+                    .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorSecondary)
+                    .padding(.bottom, DesignSystemGlobal.Spacing1)
+            }
+            
+            // Brand Name
+            Text(product.brand)
+                .font(.thdBodyXs)
+                .fontWeight(.bold)
+                .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
+                .lineLimit(1)
+            
+            // Product Title
+            Text(product.name)
+                .font(.thdBodySm)
+                .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
+                .lineLimit(2)
+                .lineSpacing(0)
+                .padding(.top, DesignSystemGlobal.Spacing1)
+            
+            // Product Details (Model, Internet, SKU)
+            productDetails
+            
+            // Price Display
+            priceSection
+            
+            // Was Price & Savings
+            savingsSection
+            
+            // Rating Stars
+            ratingSection
+            
+            // Delivery Information
+            deliverySection
+            
+            // Action Buttons
+            actionButtons
+        }
+        .padding(.leading, DesignSystemGlobal.Spacing3)
+        .padding(.trailing, DesignSystemGlobal.Spacing4)
+        .padding(.top, DesignSystemGlobal.Spacing4)
+        .padding(.bottom, DesignSystemGlobal.Spacing4)
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    // MARK: - Product Details
+    private var productDetails: some View {
+        VStack(alignment: .leading, spacing: DesignSystemGlobal.Spacing1px) {
+            Text("Model: \(product.modelNumber)")
+                .font(.thdBodyXs)
+                .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorSecondary)
+            
+            if let internetNumber = product.internetNumber {
+                Text("Internet: \(internetNumber)")
+                    .font(.thdBodyXs)
+                    .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorSecondary)
+            }
+            
+            if let storeSKU = product.storeSKU {
+                Text("Store SKU: \(storeSKU)")
+                    .font(.thdBodyXs)
+                    .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorSecondary)
+            }
+        }
+        .padding(.top, DesignSystemGlobal.Spacing1)
+    }
+    
+    // MARK: - Price Section
+    private var priceSection: some View {
+        HStack(alignment: .firstTextBaseline, spacing: DesignSystemGlobal.Spacing1px) {
+            Text("$")
+                .font(.thdH1)
+                .fontWeight(.heavy)
+                .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
+            
+            Text(formattedPriceDollars(product.currentPrice))
+                .font(.thdH1)
+                .fontWeight(.heavy)
+                .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
+            
+            if let cents = formattedPriceCents(product.currentPrice) {
+                Text(cents)
+                    .font(.thdBodySm)
+                    .fontWeight(.bold)
+                    .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
+                    .baselineOffset(DesignSystemGlobal.Spacing1 + DesignSystemGlobal.Spacing1px)
+            }
+        }
+        .padding(.top, DesignSystemGlobal.Spacing2)
+    }
+    
+    // MARK: - Savings Section
+    @ViewBuilder
+    private var savingsSection: some View {
+        if let originalPrice = product.originalPrice,
+           let savingsPercent = product.savingsPercentage {
+            let savingsAmount = originalPrice - product.currentPrice
+            
+            VStack(alignment: .leading, spacing: DesignSystemGlobal.Spacing1px) {
+                Text("Was $\(formattedFullPrice(originalPrice))")
+                    .font(.thdBodyXs)
+                    .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorSecondary)
                 
-                // Product Details
-                VStack(alignment: .leading, spacing: 2) {
-                    Text("Model: \(modelNumber)")
-                        .font(.thdBodyXs)
-                        .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorSecondary)
-                    
-                    Text("Internet: \(internetNumber)")
-                        .font(.thdBodyXs)
-                        .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorSecondary)
-                    
-                    Text("Store SKU: \(storeSKU)")
-                        .font(.thdBodyXs)
-                        .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorSecondary)
-                }
-                
-                // Price Section
-                VStack(alignment: .leading, spacing: 4) {
-                    HStack(alignment: .firstTextBaseline, spacing: 2) {
-                        Text("$")
-                            .font(.thdH1)
-                            .fontWeight(.heavy)
-                            .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
-                        
-                        Text(formattedPrice(price))
-                            .font(.thdH1)
-                            .fontWeight(.heavy)
-                            .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
-                        
-                        if let cents = formattedCents(price) {
-                            Text(cents)
-                                .font(.thdBodySm)
-                                .fontWeight(.bold)
-                                .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
-                        }
-                    }
-                    
-                    // Savings Information
-                    if let wasPrice = wasPrice, let savingsAmount = savingsAmount, let savingsPercent = savingsPercent {
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text("Was $\(formattedFullPrice(wasPrice))")
-                                .font(.thdBodyXs)
-                                .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorSecondary)
-                            
-                            Text("Saving $\(formattedFullPrice(savingsAmount)) (\(savingsPercent)%)")
-                                .font(.thdBodyXs)
-                                .fontWeight(.bold)
-                                .foregroundColor(DesignSystemGlobal.BackgroundFeedbackColorErrorAccent2)
-                        }
-                    }
-                }
-                
-                // Rating Section
-                HStack(spacing: 4) {
-                    RatingStars(rating: rating)
-                    
-                    Text("(\(String(format: "%.1f", rating))/\(reviewCount))")
-                        .font(.thdBodyXs)
+                Text("Saving $\(formattedFullPrice(savingsAmount)) (\(savingsPercent)%)")
+                    .font(.thdBodyXs)
+                    .fontWeight(.bold)
+                    .foregroundColor(DesignSystemGlobal.BackgroundFeedbackColorErrorAccent2)
+            }
+            .padding(.top, DesignSystemGlobal.Spacing1px)
+        }
+    }
+    
+    // MARK: - Rating Section
+    private var ratingSection: some View {
+        HStack(spacing: DesignSystemGlobal.Spacing1) {
+            RatingStars(rating: product.rating)
+            
+            Text("(\(String(format: "%.1f", product.rating))/\(formatNumber(product.reviewCount)))")
+                .font(.thdBodyXs)
+                .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
+        }
+        .padding(.top, DesignSystemGlobal.Spacing1 + DesignSystemGlobal.Spacing1px)
+    }
+    
+    // MARK: - Delivery Section
+    private var deliverySection: some View {
+        VStack(alignment: .leading, spacing: DesignSystemGlobal.Spacing1px) {
+            // Delivery row
+            if let delivery = product.deliveryInfo {
+                HStack(spacing: DesignSystemGlobal.Spacing1) {
+                    Text("Delivery:")
+                        .font(.thdBodySm)
+                        .fontWeight(.bold)
                         .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
-                        .lineLimit(1)
-                }
-                .padding(.top, 4)
-                
-                // Delivery Information
-                VStack(alignment: .leading, spacing: 4) {
-                    HStack(spacing: 4) {
-                        Text("Delivery:")
+                    
+                    if delivery.primaryValue.lowercased() == "free" {
+                        Text("Free")
                             .font(.thdBodySm)
                             .fontWeight(.bold)
-                            .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
-                        
-                        if deliveryOption.isFree {
-                            Text("Free")
-                                .font(.thdBodySm)
-                                .fontWeight(.bold)
-                                .foregroundColor(DesignSystemGlobal.BackgroundFeedbackColorSuccessAccent2)
-                        }
+                            .foregroundColor(DesignSystemGlobal.BackgroundFeedbackColorSuccessAccent2)
                     }
-                    
-                    HStack(spacing: 4) {
-                        Text(deliveryOption.date)
+                }
+                
+                HStack(spacing: DesignSystemGlobal.Spacing1) {
+                    if let date = delivery.secondaryValue {
+                        Text(date)
                             .font(.thdBodySm)
                             .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
-                        
+                    }
+                    
+                    // Show pickup availability if present
+                    if let pickup = product.pickupInfo {
                         Text("|")
                             .font(.thdBodySm)
                             .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorSecondary)
                         
-                        Text("\(formatNumber(deliveryOption.availableCount)) avail")
+                        Text(pickup.primaryValue)
                             .font(.thdBodySm)
                             .foregroundColor(DesignSystemGlobal.BackgroundFeedbackColorSuccessAccent2)
                     }
+                }
+            }
+            
+            // Faster delivery option
+            if let faster = product.fasterDeliveryInfo {
+                VStack(alignment: .leading, spacing: DesignSystemGlobal.Spacing1px) {
+                    Text("Faster Delivery:")
+                        .font(.thdBodySm)
+                        .fontWeight(.bold)
+                        .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
                     
-                    if let fasterDelivery = fasterDeliveryOption {
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text("Faster Delivery:")
-                                .font(.thdBodySm)
-                                .fontWeight(.bold)
-                                .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
-                            
-                            Text("Get it in \(fasterDelivery.timeframe)")
-                                .font(.thdBodySm)
-                                .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
-                        }
-                        .padding(.top, 2)
-                    }
-                }
-                .padding(.top, 4)
-            }
-            .padding(.horizontal, 12)
-            .padding(.vertical, 8)
-            
-            // Sponsored Label
-            if isSponsored {
-                Text("Sponsored")
-                    .font(.thdBodyXs)
-                    .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorSecondary)
-                    .padding(.horizontal, 12)
-                    .padding(.bottom, 8)
-            }
-            
-            Spacer()
-            
-            // Action Buttons
-            VStack(spacing: 8) {
-                Button(action: {
-                    // Add to cart action
-                }) {
-                    Text("Add to Cart")
+                    Text(faster.primaryValue)
                         .font(.thdBodySm)
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 12)
-                        .background(DesignSystemGlobal.BackgroundButtonColorBrandFilledDefault)
-                        .cornerRadius(24)
-                }
-                
-                Button(action: {
-                    // Add to list action
-                }) {
-                    Text("Add to ...")
-                        .font(.thdBodySm)
-                        .fontWeight(.bold)
                         .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 12)
-                        .background(Color.white)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 24)
-                                .stroke(DesignSystemGlobal.BorderButtonColorDefault, lineWidth: 2)
-                        )
-                        .cornerRadius(24)
                 }
+                .padding(.top, DesignSystemGlobal.Spacing1)
             }
-            .padding(.horizontal, 12)
-            .padding(.bottom, 12)
-            
-            // Color Swatches
-            HStack(spacing: 8) {
-                ForEach(Array(availableColors.prefix(3).enumerated()), id: \.offset) { index, color in
-                    RoundedRectangle(cornerRadius: 4)
-                        .fill(color)
-                        .frame(width: 32, height: 32)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 4)
-                                .stroke(DesignSystemGlobal.BorderInputColorDefault, lineWidth: 1)
-                        )
-                }
-                
-                if additionalColorCount > 0 {
-                    Text("+\(additionalColorCount)")
-                        .font(.thdBodyXs)
-                        .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
-                        .frame(width: 32, height: 32)
-                }
-            }
-            .padding(.horizontal, 12)
-            .padding(.bottom, 12)
         }
-        .background(Color.white)
-        .cornerRadius(8)
-        .shadow(color: Color.black.opacity(0.1), radius: 4, x: 0, y: 2)
+        .padding(.top, DesignSystemGlobal.Spacing2)
+    }
+    
+    // MARK: - Action Buttons
+    private var actionButtons: some View {
+        VStack(spacing: DesignSystemGlobal.Spacing2) {
+            // Add to Cart Button (Primary)
+            ButtondemoView(
+                label: "Add to Cart",
+                action: { onAddToCart?() },
+                state: .default,
+                size: .sm,
+                style: .orange_filled,
+                width: .fullWidth,
+                hasBorder: false
+            )
+            
+            // Add to List Button (Secondary - Outlined)
+            ButtondemoView(
+                label: "Add to ...",
+                action: { onAddToList?() },
+                state: .default,
+                size: .sm,
+                style: .orange_outlined,
+                width: .fullWidth,
+                hasBorder: true
+            )
+        }
+        .padding(.top, DesignSystemGlobal.Spacing3)
     }
     
     // MARK: - Helper Methods
-    private func formattedPrice(_ price: Decimal) -> String {
+    private func formattedPriceDollars(_ price: Decimal) -> String {
         let nsPrice = price as NSDecimalNumber
         let wholePart = Int(nsPrice.doubleValue)
         return "\(formatNumber(wholePart))"
     }
     
-    private func formattedCents(_ price: Decimal) -> String? {
+    private func formattedPriceCents(_ price: Decimal) -> String? {
         let nsPrice = price as NSDecimalNumber
         let doubleValue = nsPrice.doubleValue
         let wholePart = Int(doubleValue)
@@ -314,12 +376,11 @@ struct RatingStars: View {
     let rating: Double
     
     var body: some View {
-        HStack(spacing: 1) {
+        HStack(spacing: DesignSystemGlobal.Spacing1px) {
             ForEach(0..<5) { index in
                 starImage(for: index)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 16, height: 16)
+                    .foregroundColor(DesignSystemGlobal.TextOnSurfaceColorPrimary)
+                    .font(.system(size: DesignSystemGlobal.FontFontSizeBodyMd))
             }
         }
     }
@@ -328,53 +389,57 @@ struct RatingStars: View {
         let position = Double(index) + 1.0
         
         if rating >= position {
-            // Full star
             return Image(systemName: "star.fill")
         } else if rating > Double(index) && rating < position {
-            // Half star
             return Image(systemName: "star.leadinghalf.filled")
         } else {
-            // Empty star
             return Image(systemName: "star")
         }
     }
 }
 
 // MARK: - Preview
-struct ProductCard_Previews: PreviewProvider {
-    static var previews: some View {
-        ProductCard(
-            productImage: "https://images.thdstatic.com/productImages/sample.jpg",
-            badgeText: "Get it by Christmas",
-            collectionName: "Home Decorators Collection",
-            productTitle: "35.4 in. W x 10.2 in. D x 2 in. H Driftwood Gradieted with spott...",
-            modelNumber: "A7A19A100WUL01",
-            internetNumber: "58954165",
-            storeSKU: "1002-565-568",
-            price: 1798.48,
-            wasPrice: 3499.00,
-            savingsAmount: 1701.00,
-            savingsPercent: 49,
-            rating: 4.5,
-            reviewCount: 281,
-            deliveryOption: ProductCard.DeliveryOption(
-                isFree: true,
-                date: "Tomorrow",
-                availableCount: 2243
-            ),
-            fasterDeliveryOption: ProductCard.FasterDeliveryOption(
-                timeframe: "2 hours"
-            ),
-            isSponsored: true,
-            availableColors: [
-                Color(red: 0.8, green: 0.7, blue: 0.6),
-                Color(red: 0.9, green: 0.8, blue: 0.7),
-                Color(red: 0.7, green: 0.6, blue: 0.5)
-            ],
-            additionalColorCount: 99
-        )
-        .frame(width: 320)
+#Preview("ProductCard") {
+    let sampleProduct = Product(
+        id: "A7A19A100WUL01",
+        brand: "Home Decorators Collection",
+        name: "35.4 in. W x 10.2 in. D x 2 in. H Driftwood Gradieted with spott...",
+        modelNumber: "A7A19A100WUL01",
+        heroImage: "product_sample",
+        thumbnailImages: [],
+        additionalImageCount: 99,
+        currentPrice: 1798.48,
+        originalPrice: 3499.00,
+        savingsPercentage: 49,
+        rating: 4.5,
+        reviewCount: 281,
+        isExclusive: true,
+        promotionalBadge: "Get it by Christmas",
+        pickupInfo: FulfillmentInfo(
+            primaryValue: "2,243 in stock",
+            secondaryValue: "at Washington Courthouse, OH",
+            highlightedText: "Washington Courthouse, OH"
+        ),
+        deliveryInfo: FulfillmentInfo(
+            primaryValue: "Free",
+            secondaryValue: "Tomorrow"
+        ),
+        fasterDeliveryInfo: FulfillmentInfo(
+            primaryValue: "Get it in 2 hours"
+        ),
+        internetNumber: "58954165",
+        storeSKU: "1002-565-568",
+        isSponsored: true,
+        availableColors: [
+            Product.ProductColor(color: Color(red: 0.85, green: 0.75, blue: 0.65)),
+            Product.ProductColor(color: Color(red: 0.75, green: 0.65, blue: 0.55)),
+            Product.ProductColor(color: Color(red: 0.65, green: 0.55, blue: 0.45))
+        ],
+        additionalColorCount: 99
+    )
+    
+    ProductCard(product: sampleProduct)
+        .frame(width: 398)
         .padding()
-        .previewLayout(.sizeThatFits)
-    }
+        //.background(DesignSystemGlobal.BackgroundSurfaceColorGreige)
 }

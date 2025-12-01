@@ -71,37 +71,43 @@ struct DesignSystemShowcaseView: View {
             Text("Buttons")
                 .font(.headline)
             VStack(spacing: DesignSystemGlobal.Spacing5) {
-                // Using ButtondemoView component - Default state
-                ButtondemoView(
-                    label: "Primary Filled",
-                    action: {},
-                    state: .default,
-                    size: .sm,  // ← was: DesignSystemGlobal.sm
-                    width: .fullWidth,
-                    hasBorder: false
-                )
+                // Primary button - Default state
+                Button(action: {}) {
+                    Text("Primary Filled")
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(theme.brand)
+                        .cornerRadius(DesignSystemGlobal.BorderRadiusLg)
+                }
                 
-                // Using ButtondemoView component - Active/Pressed state
-                ButtondemoView(
-                    label: "Active / Pressed",
-                    action: {},
-                    state: .active_pressed,
-                    size: .md,  // ← was: DesignSystemGlobal.md
-                    width: .fullWidth,
-                    hasBorder: false
-                )
+                // Button - Active/Pressed state
+                Button(action: {}) {
+                    Text("Active / Pressed")
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(theme.accent)
+                        .cornerRadius(DesignSystemGlobal.BorderRadiusLg)
+                }
                 
-                // Using ButtondemoView component - Inactive state
-                ButtondemoView(
-                    label: "Inactive",
-                    action: {},
-                    state: .inactive,
-                    size: .md,  // ← was: DesignSystemGlobal.md
-                    width: .fullWidth,
-                    hasBorder: false
-                )
+                // Button - Inactive/Disabled state
+                Button(action: {}) {
+                    Text("Inactive")
+                        .font(.headline)
+                        .foregroundStyle(theme.textOnContainerSecondary)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(theme.container)
+                        .cornerRadius(DesignSystemGlobal.BorderRadiusLg)
+                }
+                .disabled(true)
+                .opacity(0.6)
             }
             .padding()
+            .background(.thinMaterial)
             .cornerRadius(theme.cornerRadius)
         }
     }

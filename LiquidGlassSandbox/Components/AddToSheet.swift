@@ -284,9 +284,18 @@ private let sampleProduct = Product(
     name: "3-Pack Floating Shelves, 24 in. W x 9 in. D Walnut Decorative Wall Shelves with Invisible Brackets",
     modelNumber: "SORBUS-001",
     heroImage: "shelves_product",
+    thumbnailImages: ["shelves_product"],
+    additionalImageCount: 0,
     currentPrice: 49.99,
+    originalPrice: nil,
+    savingsPercentage: nil,
     rating: 4.2,
-    reviewCount: 156
+    reviewCount: 156,
+    isExclusive: false,
+    promotionalBadge: nil,
+    pickupInfo: nil,
+    deliveryInfo: nil,
+    fasterDeliveryInfo: nil
 )
 
 #Preview("Add To Sheet") {

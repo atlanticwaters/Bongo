@@ -12,6 +12,7 @@ enum ButtondemoState: String, CaseIterable {
 
 enum ButtondemoStyle: String, CaseIterable {
     case orange_filled = "Orange Filled"
+    case orange_outlined = "Orange Outlined"
 }
 
 struct ButtondemoView: View {
@@ -48,46 +49,56 @@ struct ButtondemoView: View {
     }
 
     private var backgroundColor: Color {
-        switch state {
-        case .`default`:
+        switch (style, state) {
+        case (.orange_outlined, _):
+            return DesignSystemGlobal.BackgroundContainerColorWhite
+        case (.orange_filled, .`default`):
             return colorScheme == .dark ? DesignSystemDarkLarge.BrandBrand300 : DesignSystemLightLarge.BrandBrand300
-        case .active_pressed:
+        case (.orange_filled, .active_pressed):
             return colorScheme == .dark ? DesignSystemDarkLarge.BrandBrand300 : DesignSystemLightLarge.BrandBrand300
-        case .loading:
+        case (.orange_filled, .loading):
             return colorScheme == .dark ? DesignSystemDarkLarge.BrandBrand300 : DesignSystemLightLarge.BrandBrand300
-        case .success:
+        case (.orange_filled, .success):
             return colorScheme == .dark ? DesignSystemDarkLarge.BrandBrand300 : DesignSystemLightLarge.BrandBrand300
-        case .inactive:
+        case (.orange_filled, .inactive):
             return colorScheme == .dark ? DesignSystemDarkLarge.BackgroundButtonColorBrandFilledInactive : DesignSystemLightLarge.BackgroundButtonColorBrandFilledInactive
         }
     }
 
     private var textColor: Color {
-        switch state {
-        case .`default`:
+        switch (style, state) {
+        case (.orange_outlined, .inactive):
+            return colorScheme == .dark ? DesignSystemDarkLarge.TextButtonColorOrangeOutlineInactive : DesignSystemLightLarge.TextButtonColorOrangeOutlineInactive
+        case (.orange_outlined, _):
+            return colorScheme == .dark ? DesignSystemDarkLarge.TextButtonColorOrangeOutlineDefault : DesignSystemLightLarge.TextButtonColorOrangeOutlineDefault
+        case (.orange_filled, .`default`):
             return colorScheme == .dark ? DesignSystemDarkLarge.TextButtonColorOrangeFilledDefault : DesignSystemLightLarge.TextButtonColorOrangeFilledDefault
-        case .active_pressed:
+        case (.orange_filled, .active_pressed):
             return colorScheme == .dark ? DesignSystemDarkLarge.TextButtonColorOrangeFilledDefault : DesignSystemLightLarge.TextButtonColorOrangeFilledDefault
-        case .loading:
+        case (.orange_filled, .loading):
             return colorScheme == .dark ? DesignSystemDarkLarge.TextButtonColorOrangeFilledDefault : DesignSystemLightLarge.TextButtonColorOrangeFilledDefault
-        case .success:
+        case (.orange_filled, .success):
             return colorScheme == .dark ? DesignSystemDarkLarge.TextButtonColorOrangeFilledDefault : DesignSystemLightLarge.TextButtonColorOrangeFilledDefault
-        case .inactive:
+        case (.orange_filled, .inactive):
             return colorScheme == .dark ? DesignSystemDarkLarge.TextButtonColorOrangeFilledInactive : DesignSystemLightLarge.TextButtonColorOrangeFilledInactive
         }
     }
 
     private var borderColor: Color {
-        switch state {
-        case .`default`:
+        switch (style, state) {
+        case (.orange_outlined, .inactive):
+            return colorScheme == .dark ? DesignSystemDarkLarge.BorderButtonColorOrangeOutlineInactive : DesignSystemLightLarge.BorderButtonColorOrangeOutlineInactive
+        case (.orange_outlined, _):
+            return colorScheme == .dark ? DesignSystemDarkLarge.BorderButtonColorOrangeOutlineDefault : DesignSystemLightLarge.BorderButtonColorOrangeOutlineDefault
+        case (.orange_filled, .`default`):
             return colorScheme == .dark ? DesignSystemDarkLarge.BorderButtonColorDefault : DesignSystemLightLarge.BorderButtonColorDefault
-        case .active_pressed:
+        case (.orange_filled, .active_pressed):
             return colorScheme == .dark ? DesignSystemDarkLarge.BorderButtonColorFocus : DesignSystemLightLarge.BorderButtonColorFocus
-        case .loading:
+        case (.orange_filled, .loading):
             return colorScheme == .dark ? DesignSystemDarkLarge.BorderButtonColorDefault : DesignSystemLightLarge.BorderButtonColorDefault
-        case .success:
+        case (.orange_filled, .success):
             return colorScheme == .dark ? DesignSystemDarkLarge.BorderButtonColorDefault : DesignSystemLightLarge.BorderButtonColorDefault
-        case .inactive:
+        case (.orange_filled, .inactive):
             return colorScheme == .dark ? DesignSystemDarkLarge.BorderButtonColorFocus : DesignSystemLightLarge.BorderButtonColorFocus
         }
     }
