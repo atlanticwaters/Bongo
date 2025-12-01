@@ -1,11 +1,11 @@
 import SwiftUI
 
 // MARK: - App Background Modifier
-// Applies consistent Greige100 background to all views in the app
+// Applies consistent Griege 050 background to all views in the app
 struct AppBackgroundModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .background(DesignSystemGlobal.GreigeGreige100.ignoresSafeArea())
+            .background(DesignSystemGlobal.TransparentBlackTransparentBlack050.ignoresSafeArea())
     }
 }
 

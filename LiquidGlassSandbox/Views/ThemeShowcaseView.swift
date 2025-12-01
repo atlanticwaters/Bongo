@@ -30,6 +30,7 @@ struct DesignSystemShowcaseView: View {
             }
             .navigationTitle("Design System")
         }
+        .tint(DesignSystemGlobal.BrandBrand300)
     }
 
     // MARK: - Sections
@@ -69,35 +70,38 @@ struct DesignSystemShowcaseView: View {
         return VStack(alignment: .leading, spacing: 12) {
             Text("Buttons")
                 .font(.headline)
-            VStack(spacing: 12) {
-                Button {
-                } label: {
-                    Text("Primary Filled")
-                        .fontWeight(.semibold)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(theme.brand)
-                        .foregroundStyle(theme.textOnContainerInverse)
-                        .cornerRadius(theme.cornerRadius)
-                }
-
-                Button {
-                } label: {
-                    Text("Ghost / Outline")
-                        .fontWeight(.semibold)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .overlay(
-                            RoundedRectangle(cornerRadius: theme.cornerRadius)
-                                .stroke(theme.borderOnContainer, lineWidth: 1.5)
-                        )
-                        .foregroundStyle(theme.textOnContainerPrimary)
-                }
-                .background(theme.container)
-                .cornerRadius(theme.cornerRadius)
+            VStack(spacing: DesignSystemGlobal.Spacing5) {
+                // Using ButtondemoView component - Default state
+                ButtondemoView(
+                    label: "Primary Filled",
+                    action: {},
+                    state: .default,
+                    size: .sm,  // ← was: DesignSystemGlobal.sm
+                    width: .fullWidth,
+                    hasBorder: false
+                )
+                
+                // Using ButtondemoView component - Active/Pressed state
+                ButtondemoView(
+                    label: "Active / Pressed",
+                    action: {},
+                    state: .active_pressed,
+                    size: .md,  // ← was: DesignSystemGlobal.md
+                    width: .fullWidth,
+                    hasBorder: false
+                )
+                
+                // Using ButtondemoView component - Inactive state
+                ButtondemoView(
+                    label: "Inactive",
+                    action: {},
+                    state: .inactive,
+                    size: .md,  // ← was: DesignSystemGlobal.md
+                    width: .fullWidth,
+                    hasBorder: false
+                )
             }
             .padding()
-            .background(.thinMaterial)
             .cornerRadius(theme.cornerRadius)
         }
     }

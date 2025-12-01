@@ -2,6 +2,7 @@ import SwiftUI
 
 // MARK: - Adaptive UI View
 // Showcases responsive layouts that adapt to device orientation and screen size
+// ✅ Updated to use design system theme tokens throughout
 struct AdaptiveUIView: View {
 
     // MARK: - Environment Properties
@@ -29,11 +30,12 @@ struct AdaptiveUIView: View {
                             VStack(alignment: .leading, spacing: 4) {
                                 Text("Feature \(index + 1)")
                                     .font(.headline)
+                                    .foregroundStyle(Color.textPrimary)  // Design system text color
                                 Text("Tap to view details")
                                     .font(.caption)
-                                    .foregroundColor(.gray)
+                                    .foregroundStyle(Color.textSecondary)  // Design system text color
                             }
-                            .padding(.vertical, 8)
+                            .padding(.vertical, AppTheme.spacingCompact)  // Design system spacing (12pt)
                         }
                     }
                     .frame(maxWidth: 300)  // Fixed width for master list
@@ -50,11 +52,11 @@ struct AdaptiveUIView: View {
                         VStack {
                             Text("Select an item")
                                 .font(.headline)
-                                .foregroundColor(.gray)
+                                .foregroundStyle(Color.textSecondary)  // Design system text color
                         }
                         .frame(maxWidth: .infinity)
                         .frame(maxHeight: .infinity)
-                        .background(.gray.opacity(0.05))
+                        .background(Color.appBackground)  // Design system background
                     }
                 }
                 .navigationDestination(
@@ -77,16 +79,19 @@ struct AdaptiveUIView: View {
                         VStack(alignment: .leading, spacing: 4) {
                             Text("Feature \(index + 1)")
                                 .font(.headline)
+                                .foregroundStyle(Color.textPrimary)  // Design system text color
                             Text("Adaptive layout example")
                                 .font(.caption)
-                                .foregroundColor(.gray)
+                                .foregroundStyle(Color.textSecondary)  // Design system text color
                         }
-                        .padding(.vertical, 8)
+                        .padding(.vertical, AppTheme.spacingCompact)  // Design system spacing (12pt)
                     }
                 }
                 .navigationTitle("Adaptive Layouts")
             }
         }
+        .themedAppBackground()  // Apply design system background (Griege 050)
+        .tint(DesignSystemGlobal.BrandBrand300)  // Brand orange for tappable elements
     }
 }
 
@@ -100,73 +105,74 @@ struct DetailPanel: View {
     // MARK: - View Body
     var body: some View {
         ScrollView {
-            VStack(spacing: 20) {
+            VStack(spacing: AppTheme.spacingLoose) {  // Design system spacing (24pt)
                 // MARK: Header with Icon
-                VStack(spacing: 12) {
+                VStack(spacing: AppTheme.spacingCompact) {  // Design system spacing (12pt)
                     // Icon changes based on which item is selected
                     Image(systemName: getIconName(for: itemIndex))
                         .font(.system(size: 48))
-                        .foregroundColor(.blue)
+                        .brandTinted()  // Apply brand color to icon
 
                     // Title based on item index
                     Text("Feature \(itemIndex + 1)")
                         .font(.system(size: 28, weight: .bold))
+                        .foregroundStyle(Color.textPrimary)  // Design system text color
                 }
                 .frame(maxWidth: .infinity)
-                .padding(24)
-                .glassEffect(in: .rect(cornerRadius: 16))  // Liquid Glass effect
-                .padding()
+                .padding(AppTheme.spacingLoose)  // Design system spacing (24pt)
+                .glassEffect(in: .rect(cornerRadius: AppTheme.cornerRadiusLarge))  // Liquid Glass with design system corner radius
+                .padding(AppTheme.spacingStandard)  // Design system spacing (16pt)
 
                 // MARK: Content Description
                 // Shows different text based on the selected feature
-                VStack(spacing: 12) {
+                VStack(spacing: AppTheme.spacingCompact) {  // Design system spacing (12pt)
                     Text("Adaptive Layout Details")
                         .font(.headline)
+                        .foregroundStyle(Color.textPrimary)  // Design system text color
 
                     Text(getDescription(for: itemIndex))
                         .font(.body)
                         .lineLimit(nil)  // Allow unlimited lines
-                        .foregroundColor(.gray)
+                        .foregroundStyle(Color.textSecondary)  // Design system text color
                 }
-                .padding()
-                .background(.thinMaterial)
-                .cornerRadius(12)
-                .padding()
+                .padding(AppTheme.spacingStandard)  // Design system spacing (16pt)
+                .themedCard()  // Use themed card background (Griege 200)
+                .padding(AppTheme.spacingStandard)  // Design system spacing (16pt)
 
                 // MARK: Interactive Example
                 // Demonstrates responsive design with state changes
-                VStack(spacing: 12) {
+                VStack(spacing: AppTheme.spacingCompact) {  // Design system spacing (12pt)
                     Text("Responsive Grid Example")
                         .font(.headline)
+                        .foregroundStyle(Color.textPrimary)  // Design system text color
                         .frame(maxWidth: .infinity, alignment: .leading)
 
                     // Grid of items that adapts to available space
-                    VStack(spacing: 8) {
-                        HStack(spacing: 8) {
+                    VStack(spacing: AppTheme.spacingCompact) {  // Design system spacing (12pt)
+                        HStack(spacing: AppTheme.spacingCompact) {  // Design system spacing (12pt)
                             ForEach(0..<2, id: \.self) { _ in
-                                RoundedRectangle(cornerRadius: 8)
+                                RoundedRectangle(cornerRadius: AppTheme.cornerRadiusStandard)  // Design system corner radius (8pt)
                                     .fill(.regularMaterial)
                                     .frame(height: 80)
                             }
                         }
 
-                        HStack(spacing: 8) {
+                        HStack(spacing: AppTheme.spacingCompact) {  // Design system spacing (12pt)
                             ForEach(0..<2, id: \.self) { _ in
-                                RoundedRectangle(cornerRadius: 8)
+                                RoundedRectangle(cornerRadius: AppTheme.cornerRadiusStandard)  // Design system corner radius (8pt)
                                     .fill(.regularMaterial)
                                     .frame(height: 80)
                             }
                         }
                     }
                 }
-                .padding()
-                .background(.gray.opacity(0.05))
-                .cornerRadius(12)
-                .padding()
+                .themedContainer()  // Use themed card background (Griege 200)
+                .padding(AppTheme.spacingStandard)  // Design system spacing (16pt)
             }
             .padding(.vertical)
         }
         .navigationTitle("Feature Details")
+        .tint(DesignSystemGlobal.BrandBrand300)  // Brand orange for tappable elements
     }
 
     // MARK: - Helper Methods
