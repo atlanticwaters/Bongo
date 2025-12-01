@@ -14,78 +14,12 @@
 		1045E69D2EDE38D200821874 /* FONT_LOADING_FIX.md in Resources */ = {isa = PBXBuildFile; fileRef = 1045E69C2EDE38D200821874 /* FONT_LOADING_FIX.md */; };
 		1045E69F2EDE38EE00821874 /* FontTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1045E69E2EDE38EE00821874 /* FontTestView.swift */; };
 		1045E6A12EDE390900821874 /* FONT_FIX_CHECKLIST.md in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6A02EDE390900821874 /* FONT_FIX_CHECKLIST.md */; };
-		1045E6EA2EDE397F00821874 /* THDLgBeta-24Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6A52EDE397F00821874 /* THDLgBeta-24Italic.otf */; };
-		1045E6EB2EDE397F00821874 /* THDSmBeta-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6E12EDE397F00821874 /* THDSmBeta-Italic.otf */; };
-		1045E6EC2EDE397F00821874 /* THDLgBeta-36Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6B72EDE397F00821874 /* THDLgBeta-36Italic.otf */; };
-		1045E6ED2EDE397F00821874 /* THDLgBeta-59Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6D92EDE397F00821874 /* THDLgBeta-59Italic.otf */; };
-		1045E6EE2EDE397F00821874 /* THDSmBeta-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6E32EDE397F00821874 /* THDSmBeta-LightItalic.otf */; };
-		1045E6EF2EDE397F00821874 /* THDLgBeta-44.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6C02EDE397F00821874 /* THDLgBeta-44.otf */; };
-		1045E6F02EDE397F00821874 /* THDLgBeta-29Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6AF2EDE397F00821874 /* THDLgBeta-29Italic.otf */; };
-		1045E6F12EDE397F00821874 /* THDLgBeta-26Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6A92EDE397F00821874 /* THDLgBeta-26Italic.otf */; };
-		1045E6F22EDE397F00821874 /* THDLgBeta-49Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6CB2EDE397F00821874 /* THDLgBeta-49Italic.otf */; };
-		1045E6F32EDE397F00821874 /* THDLgBeta-58.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6D62EDE397F00821874 /* THDLgBeta-58.otf */; };
-		1045E6F42EDE397F00821874 /* THDLgBeta-45.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6C22EDE397F00821874 /* THDLgBeta-45.otf */; };
-		1045E6F52EDE397F00821874 /* THDLgBeta-36.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6B62EDE397F00821874 /* THDLgBeta-36.otf */; };
-		1045E6F62EDE397F00821874 /* THDLgBeta-37.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6B82EDE397F00821874 /* THDLgBeta-37.otf */; };
-		1045E6F72EDE397F00821874 /* THDSmBeta-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6DD2EDE397F00821874 /* THDSmBeta-Bold.otf */; };
-		1045E6F82EDE397F00821874 /* THDSmBeta-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6E62EDE397F00821874 /* THDSmBeta-Regular.otf */; };
-		1045E6F92EDE397F00821874 /* THDLgBeta-57.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6D42EDE397F00821874 /* THDLgBeta-57.otf */; };
-		1045E6FA2EDE397F00821874 /* THDLgBeta-54.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6CE2EDE397F00821874 /* THDLgBeta-54.otf */; };
-		1045E6FB2EDE397F00821874 /* THDLgBeta-25Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6A72EDE397F00821874 /* THDLgBeta-25Italic.otf */; };
-		1045E6FC2EDE397F00821874 /* THDLgBeta-43.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6BE2EDE397F00821874 /* THDLgBeta-43.otf */; };
-		1045E6FD2EDE397F00821874 /* THDLgBeta-33Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6B12EDE397F00821874 /* THDLgBeta-33Italic.otf */; };
-		1045E6FE2EDE397F00821874 /* THDLgBeta-39.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6BC2EDE397F00821874 /* THDLgBeta-39.otf */; };
-		1045E6FF2EDE397F00821874 /* THDLgBeta-47Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6C72EDE397F00821874 /* THDLgBeta-47Italic.otf */; };
-		1045E7002EDE397F00821874 /* THDLgBeta-38.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6BA2EDE397F00821874 /* THDLgBeta-38.otf */; };
-		1045E7012EDE397F00821874 /* THDLgBeta-46Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6C52EDE397F00821874 /* THDLgBeta-46Italic.otf */; };
-		1045E7022EDE397F00821874 /* THDLgBeta-54Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6CF2EDE397F00821874 /* THDLgBeta-54Italic.otf */; };
-		1045E7032EDE397F00821874 /* THDLgBeta-43Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6BF2EDE397F00821874 /* THDLgBeta-43Italic.otf */; };
-		1045E7042EDE397F00821874 /* THDSmBeta-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6DC2EDE397F00821874 /* THDSmBeta-BlackItalic.otf */; };
-		1045E7052EDE397F00821874 /* THDSmBeta-ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6E02EDE397F00821874 /* THDSmBeta-ExtraBoldItalic.otf */; };
-		1045E7062EDE397F00821874 /* THDLgBeta-33.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6B02EDE397F00821874 /* THDLgBeta-33.otf */; };
-		1045E7072EDE397F00821874 /* THDLgBeta-49.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6CA2EDE397F00821874 /* THDLgBeta-49.otf */; };
-		1045E7082EDE397F00821874 /* THDLgBeta-57Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6D52EDE397F00821874 /* THDLgBeta-57Italic.otf */; };
-		1045E7092EDE397F00821874 /* THDLgBeta-37Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6B92EDE397F00821874 /* THDLgBeta-37Italic.otf */; };
-		1045E70A2EDE397F00821874 /* THDLgBeta-44Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6C12EDE397F00821874 /* THDLgBeta-44Italic.otf */; };
-		1045E70B2EDE397F00821874 /* THDLgBeta-55Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6D12EDE397F00821874 /* THDLgBeta-55Italic.otf */; };
-		1045E70C2EDE397F00821874 /* THDLgBeta-48Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6C92EDE397F00821874 /* THDLgBeta-48Italic.otf */; };
-		1045E70D2EDE397F00821874 /* THDLgBeta-45Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6C32EDE397F00821874 /* THDLgBeta-45Italic.otf */; };
-		1045E70E2EDE397F00821874 /* THDLgBeta-58Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6D72EDE397F00821874 /* THDLgBeta-58Italic.otf */; };
-		1045E70F2EDE397F00821874 /* THDLgBeta-48.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6C82EDE397F00821874 /* THDLgBeta-48.otf */; };
-		1045E7102EDE397F00821874 /* THDSmBeta-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6DB2EDE397F00821874 /* THDSmBeta-Black.otf */; };
-		1045E7112EDE397F00821874 /* THDLgBeta-23.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6A22EDE397F00821874 /* THDLgBeta-23.otf */; };
-		1045E7122EDE397F00821874 /* THDSmBeta-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6E72EDE397F00821874 /* THDSmBeta-SemiBold.otf */; };
-		1045E7132EDE397F00821874 /* THDLgBeta-59.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6D82EDE397F00821874 /* THDLgBeta-59.otf */; };
-		1045E7142EDE397F00821874 /* THDLgBeta-34.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6B22EDE397F00821874 /* THDLgBeta-34.otf */; };
-		1045E7152EDE397F00821874 /* THDLgBeta-27.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6AA2EDE397F00821874 /* THDLgBeta-27.otf */; };
-		1045E7162EDE397F00821874 /* THDLgBeta-56Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6D32EDE397F00821874 /* THDLgBeta-56Italic.otf */; };
-		1045E7172EDE397F00821874 /* THDLgBeta-47.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6C62EDE397F00821874 /* THDLgBeta-47.otf */; };
-		1045E7182EDE397F00821874 /* THDLgBeta-39Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6BD2EDE397F00821874 /* THDLgBeta-39Italic.otf */; };
-		1045E7192EDE397F00821874 /* THDLgBeta-56.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6D22EDE397F00821874 /* THDLgBeta-56.otf */; };
-		1045E71A2EDE397F00821874 /* THDLgBeta-28.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6AC2EDE397F00821874 /* THDLgBeta-28.otf */; };
-		1045E71B2EDE397F00821874 /* THDLgBeta-23Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6A32EDE397F00821874 /* THDLgBeta-23Italic.otf */; };
-		1045E71C2EDE397F00821874 /* THDLgBeta-28Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6AD2EDE397F00821874 /* THDLgBeta-28Italic.otf */; };
-		1045E71D2EDE397F00821874 /* THDLgBeta-29.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6AE2EDE397F00821874 /* THDLgBeta-29.otf */; };
-		1045E71E2EDE397F00821874 /* THDLgBeta-53.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6CC2EDE397F00821874 /* THDLgBeta-53.otf */; };
-		1045E71F2EDE397F00821874 /* THDSmBeta-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6E82EDE397F00821874 /* THDSmBeta-SemiBoldItalic.otf */; };
-		1045E7202EDE397F00821874 /* THDLgBeta-34Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6B32EDE397F00821874 /* THDLgBeta-34Italic.otf */; };
-		1045E7212EDE397F00821874 /* THDSmBeta-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6E52EDE397F00821874 /* THDSmBeta-MediumItalic.otf */; };
-		1045E7222EDE397F00821874 /* THDSmBeta-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6E22EDE397F00821874 /* THDSmBeta-Light.otf */; };
-		1045E7232EDE397F00821874 /* THDLgBeta-35.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6B42EDE397F00821874 /* THDLgBeta-35.otf */; };
-		1045E7242EDE397F00821874 /* THDLgBeta-26.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6A82EDE397F00821874 /* THDLgBeta-26.otf */; };
-		1045E7252EDE397F00821874 /* THDLgBeta-46.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6C42EDE397F00821874 /* THDLgBeta-46.otf */; };
-		1045E7262EDE397F00821874 /* THDSmBeta-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6DF2EDE397F00821874 /* THDSmBeta-ExtraBold.otf */; };
-		1045E7272EDE397F00821874 /* THDLgBeta-53Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6CD2EDE397F00821874 /* THDLgBeta-53Italic.otf */; };
-		1045E7282EDE397F00821874 /* THDLgBeta-35Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6B52EDE397F00821874 /* THDLgBeta-35Italic.otf */; };
-		1045E7292EDE397F00821874 /* THDSmBeta-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6E42EDE397F00821874 /* THDSmBeta-Medium.otf */; };
-		1045E72A2EDE397F00821874 /* THDLgBeta-55.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6D02EDE397F00821874 /* THDLgBeta-55.otf */; };
-		1045E72B2EDE397F00821874 /* THDSmBeta-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6DE2EDE397F00821874 /* THDSmBeta-BoldItalic.otf */; };
-		1045E72C2EDE397F00821874 /* THDLgBeta-38Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6BB2EDE397F00821874 /* THDLgBeta-38Italic.otf */; };
-		1045E72D2EDE397F00821874 /* THDLgBeta-24.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6A42EDE397F00821874 /* THDLgBeta-24.otf */; };
-		1045E72E2EDE397F00821874 /* THDLgBeta-25.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6A62EDE397F00821874 /* THDLgBeta-25.otf */; };
-		1045E72F2EDE397F00821874 /* THDLgBeta-27Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E6AB2EDE397F00821874 /* THDLgBeta-27Italic.otf */; };
 		1045E7312EDE3A1900821874 /* FONTS_IN_RESOURCES_SETUP.md in Resources */ = {isa = PBXBuildFile; fileRef = 1045E7302EDE3A1900821874 /* FONTS_IN_RESOURCES_SETUP.md */; };
 		1045E7332EDE3A3400821874 /* FONT_CONFIG_REFERENCE.md in Resources */ = {isa = PBXBuildFile; fileRef = 1045E7322EDE3A3400821874 /* FONT_CONFIG_REFERENCE.md */; };
+		1045E7392EDE404F00821874 /* THD SmVar Beta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E7382EDE404F00821874 /* THD SmVar Beta.ttf */; };
+		1045E73A2EDE404F00821874 /* THD LgVar Beta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1045E7372EDE404F00821874 /* THD LgVar Beta.ttf */; };
+		1045E73C2EDE42D200821874 /* FONT_WEIGHTS_EXPLAINED.md in Resources */ = {isa = PBXBuildFile; fileRef = 1045E73B2EDE42D200821874 /* FONT_WEIGHTS_EXPLAINED.md */; };
+		1045E73E2EDE42FD00821874 /* FontWeightsDiagnosticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1045E73D2EDE42FD00821874 /* FontWeightsDiagnosticView.swift */; };
 		105879452ED5038100B00087 /* ThemeShowcaseView 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105879442ED5038100B00087 /* ThemeShowcaseView 2.swift */; };
 		105879472ED5073900B00087 /* AppBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105879462ED5073900B00087 /* AppBackground.swift */; };
 		105879492ED5076100B00087 /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105879482ED5076100B00087 /* CustomFonts.swift */; };
@@ -149,78 +83,13 @@
 		1045E69C2EDE38D200821874 /* FONT_LOADING_FIX.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FONT_LOADING_FIX.md; sourceTree = "<group>"; };
 		1045E69E2EDE38EE00821874 /* FontTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTestView.swift; sourceTree = "<group>"; };
 		1045E6A02EDE390900821874 /* FONT_FIX_CHECKLIST.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FONT_FIX_CHECKLIST.md; sourceTree = "<group>"; };
-		1045E6A22EDE397F00821874 /* THDLgBeta-23.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-23.otf"; sourceTree = "<group>"; };
-		1045E6A32EDE397F00821874 /* THDLgBeta-23Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-23Italic.otf"; sourceTree = "<group>"; };
-		1045E6A42EDE397F00821874 /* THDLgBeta-24.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-24.otf"; sourceTree = "<group>"; };
-		1045E6A52EDE397F00821874 /* THDLgBeta-24Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-24Italic.otf"; sourceTree = "<group>"; };
-		1045E6A62EDE397F00821874 /* THDLgBeta-25.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-25.otf"; sourceTree = "<group>"; };
-		1045E6A72EDE397F00821874 /* THDLgBeta-25Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-25Italic.otf"; sourceTree = "<group>"; };
-		1045E6A82EDE397F00821874 /* THDLgBeta-26.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-26.otf"; sourceTree = "<group>"; };
-		1045E6A92EDE397F00821874 /* THDLgBeta-26Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-26Italic.otf"; sourceTree = "<group>"; };
-		1045E6AA2EDE397F00821874 /* THDLgBeta-27.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-27.otf"; sourceTree = "<group>"; };
-		1045E6AB2EDE397F00821874 /* THDLgBeta-27Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-27Italic.otf"; sourceTree = "<group>"; };
-		1045E6AC2EDE397F00821874 /* THDLgBeta-28.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-28.otf"; sourceTree = "<group>"; };
-		1045E6AD2EDE397F00821874 /* THDLgBeta-28Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-28Italic.otf"; sourceTree = "<group>"; };
-		1045E6AE2EDE397F00821874 /* THDLgBeta-29.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-29.otf"; sourceTree = "<group>"; };
-		1045E6AF2EDE397F00821874 /* THDLgBeta-29Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-29Italic.otf"; sourceTree = "<group>"; };
-		1045E6B02EDE397F00821874 /* THDLgBeta-33.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-33.otf"; sourceTree = "<group>"; };
-		1045E6B12EDE397F00821874 /* THDLgBeta-33Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-33Italic.otf"; sourceTree = "<group>"; };
-		1045E6B22EDE397F00821874 /* THDLgBeta-34.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-34.otf"; sourceTree = "<group>"; };
-		1045E6B32EDE397F00821874 /* THDLgBeta-34Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-34Italic.otf"; sourceTree = "<group>"; };
-		1045E6B42EDE397F00821874 /* THDLgBeta-35.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-35.otf"; sourceTree = "<group>"; };
-		1045E6B52EDE397F00821874 /* THDLgBeta-35Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-35Italic.otf"; sourceTree = "<group>"; };
-		1045E6B62EDE397F00821874 /* THDLgBeta-36.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-36.otf"; sourceTree = "<group>"; };
-		1045E6B72EDE397F00821874 /* THDLgBeta-36Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-36Italic.otf"; sourceTree = "<group>"; };
-		1045E6B82EDE397F00821874 /* THDLgBeta-37.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-37.otf"; sourceTree = "<group>"; };
-		1045E6B92EDE397F00821874 /* THDLgBeta-37Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-37Italic.otf"; sourceTree = "<group>"; };
-		1045E6BA2EDE397F00821874 /* THDLgBeta-38.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-38.otf"; sourceTree = "<group>"; };
-		1045E6BB2EDE397F00821874 /* THDLgBeta-38Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-38Italic.otf"; sourceTree = "<group>"; };
-		1045E6BC2EDE397F00821874 /* THDLgBeta-39.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-39.otf"; sourceTree = "<group>"; };
-		1045E6BD2EDE397F00821874 /* THDLgBeta-39Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-39Italic.otf"; sourceTree = "<group>"; };
-		1045E6BE2EDE397F00821874 /* THDLgBeta-43.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-43.otf"; sourceTree = "<group>"; };
-		1045E6BF2EDE397F00821874 /* THDLgBeta-43Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-43Italic.otf"; sourceTree = "<group>"; };
-		1045E6C02EDE397F00821874 /* THDLgBeta-44.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-44.otf"; sourceTree = "<group>"; };
-		1045E6C12EDE397F00821874 /* THDLgBeta-44Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-44Italic.otf"; sourceTree = "<group>"; };
-		1045E6C22EDE397F00821874 /* THDLgBeta-45.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-45.otf"; sourceTree = "<group>"; };
-		1045E6C32EDE397F00821874 /* THDLgBeta-45Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-45Italic.otf"; sourceTree = "<group>"; };
-		1045E6C42EDE397F00821874 /* THDLgBeta-46.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-46.otf"; sourceTree = "<group>"; };
-		1045E6C52EDE397F00821874 /* THDLgBeta-46Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-46Italic.otf"; sourceTree = "<group>"; };
-		1045E6C62EDE397F00821874 /* THDLgBeta-47.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-47.otf"; sourceTree = "<group>"; };
-		1045E6C72EDE397F00821874 /* THDLgBeta-47Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-47Italic.otf"; sourceTree = "<group>"; };
-		1045E6C82EDE397F00821874 /* THDLgBeta-48.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-48.otf"; sourceTree = "<group>"; };
-		1045E6C92EDE397F00821874 /* THDLgBeta-48Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-48Italic.otf"; sourceTree = "<group>"; };
-		1045E6CA2EDE397F00821874 /* THDLgBeta-49.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-49.otf"; sourceTree = "<group>"; };
-		1045E6CB2EDE397F00821874 /* THDLgBeta-49Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-49Italic.otf"; sourceTree = "<group>"; };
-		1045E6CC2EDE397F00821874 /* THDLgBeta-53.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-53.otf"; sourceTree = "<group>"; };
-		1045E6CD2EDE397F00821874 /* THDLgBeta-53Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-53Italic.otf"; sourceTree = "<group>"; };
-		1045E6CE2EDE397F00821874 /* THDLgBeta-54.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-54.otf"; sourceTree = "<group>"; };
-		1045E6CF2EDE397F00821874 /* THDLgBeta-54Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-54Italic.otf"; sourceTree = "<group>"; };
-		1045E6D02EDE397F00821874 /* THDLgBeta-55.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-55.otf"; sourceTree = "<group>"; };
-		1045E6D12EDE397F00821874 /* THDLgBeta-55Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-55Italic.otf"; sourceTree = "<group>"; };
-		1045E6D22EDE397F00821874 /* THDLgBeta-56.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-56.otf"; sourceTree = "<group>"; };
-		1045E6D32EDE397F00821874 /* THDLgBeta-56Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-56Italic.otf"; sourceTree = "<group>"; };
-		1045E6D42EDE397F00821874 /* THDLgBeta-57.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-57.otf"; sourceTree = "<group>"; };
-		1045E6D52EDE397F00821874 /* THDLgBeta-57Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-57Italic.otf"; sourceTree = "<group>"; };
-		1045E6D62EDE397F00821874 /* THDLgBeta-58.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-58.otf"; sourceTree = "<group>"; };
-		1045E6D72EDE397F00821874 /* THDLgBeta-58Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-58Italic.otf"; sourceTree = "<group>"; };
-		1045E6D82EDE397F00821874 /* THDLgBeta-59.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-59.otf"; sourceTree = "<group>"; };
-		1045E6D92EDE397F00821874 /* THDLgBeta-59Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDLgBeta-59Italic.otf"; sourceTree = "<group>"; };
-		1045E6DB2EDE397F00821874 /* THDSmBeta-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDSmBeta-Black.otf"; sourceTree = "<group>"; };
-		1045E6DC2EDE397F00821874 /* THDSmBeta-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDSmBeta-BlackItalic.otf"; sourceTree = "<group>"; };
-		1045E6DD2EDE397F00821874 /* THDSmBeta-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDSmBeta-Bold.otf"; sourceTree = "<group>"; };
-		1045E6DE2EDE397F00821874 /* THDSmBeta-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDSmBeta-BoldItalic.otf"; sourceTree = "<group>"; };
-		1045E6DF2EDE397F00821874 /* THDSmBeta-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDSmBeta-ExtraBold.otf"; sourceTree = "<group>"; };
-		1045E6E02EDE397F00821874 /* THDSmBeta-ExtraBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDSmBeta-ExtraBoldItalic.otf"; sourceTree = "<group>"; };
-		1045E6E12EDE397F00821874 /* THDSmBeta-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDSmBeta-Italic.otf"; sourceTree = "<group>"; };
-		1045E6E22EDE397F00821874 /* THDSmBeta-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDSmBeta-Light.otf"; sourceTree = "<group>"; };
-		1045E6E32EDE397F00821874 /* THDSmBeta-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDSmBeta-LightItalic.otf"; sourceTree = "<group>"; };
-		1045E6E42EDE397F00821874 /* THDSmBeta-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDSmBeta-Medium.otf"; sourceTree = "<group>"; };
-		1045E6E52EDE397F00821874 /* THDSmBeta-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDSmBeta-MediumItalic.otf"; sourceTree = "<group>"; };
-		1045E6E62EDE397F00821874 /* THDSmBeta-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDSmBeta-Regular.otf"; sourceTree = "<group>"; };
-		1045E6E72EDE397F00821874 /* THDSmBeta-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDSmBeta-SemiBold.otf"; sourceTree = "<group>"; };
-		1045E6E82EDE397F00821874 /* THDSmBeta-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THDSmBeta-SemiBoldItalic.otf"; sourceTree = "<group>"; };
 		1045E7302EDE3A1900821874 /* FONTS_IN_RESOURCES_SETUP.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FONTS_IN_RESOURCES_SETUP.md; sourceTree = "<group>"; };
 		1045E7322EDE3A3400821874 /* FONT_CONFIG_REFERENCE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FONT_CONFIG_REFERENCE.md; sourceTree = "<group>"; };
+		1045E7362EDE3D3C00821874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1045E7372EDE404F00821874 /* THD LgVar Beta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THD LgVar Beta.ttf"; sourceTree = "<group>"; };
+		1045E7382EDE404F00821874 /* THD SmVar Beta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THD SmVar Beta.ttf"; sourceTree = "<group>"; };
+		1045E73B2EDE42D200821874 /* FONT_WEIGHTS_EXPLAINED.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FONT_WEIGHTS_EXPLAINED.md; sourceTree = "<group>"; };
+		1045E73D2EDE42FD00821874 /* FontWeightsDiagnosticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontWeightsDiagnosticView.swift; sourceTree = "<group>"; };
 		105879442ED5038100B00087 /* ThemeShowcaseView 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeShowcaseView 2.swift"; sourceTree = "<group>"; };
 		105879462ED5073900B00087 /* AppBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackground.swift; sourceTree = "<group>"; };
 		105879482ED5076100B00087 /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
@@ -300,90 +169,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1045E6DA2EDE397F00821874 /* THD Lg Beta_otf */ = {
-			isa = PBXGroup;
-			children = (
-				1045E6A22EDE397F00821874 /* THDLgBeta-23.otf */,
-				1045E6A32EDE397F00821874 /* THDLgBeta-23Italic.otf */,
-				1045E6A42EDE397F00821874 /* THDLgBeta-24.otf */,
-				1045E6A52EDE397F00821874 /* THDLgBeta-24Italic.otf */,
-				1045E6A62EDE397F00821874 /* THDLgBeta-25.otf */,
-				1045E6A72EDE397F00821874 /* THDLgBeta-25Italic.otf */,
-				1045E6A82EDE397F00821874 /* THDLgBeta-26.otf */,
-				1045E6A92EDE397F00821874 /* THDLgBeta-26Italic.otf */,
-				1045E6AA2EDE397F00821874 /* THDLgBeta-27.otf */,
-				1045E6AB2EDE397F00821874 /* THDLgBeta-27Italic.otf */,
-				1045E6AC2EDE397F00821874 /* THDLgBeta-28.otf */,
-				1045E6AD2EDE397F00821874 /* THDLgBeta-28Italic.otf */,
-				1045E6AE2EDE397F00821874 /* THDLgBeta-29.otf */,
-				1045E6AF2EDE397F00821874 /* THDLgBeta-29Italic.otf */,
-				1045E6B02EDE397F00821874 /* THDLgBeta-33.otf */,
-				1045E6B12EDE397F00821874 /* THDLgBeta-33Italic.otf */,
-				1045E6B22EDE397F00821874 /* THDLgBeta-34.otf */,
-				1045E6B32EDE397F00821874 /* THDLgBeta-34Italic.otf */,
-				1045E6B42EDE397F00821874 /* THDLgBeta-35.otf */,
-				1045E6B52EDE397F00821874 /* THDLgBeta-35Italic.otf */,
-				1045E6B62EDE397F00821874 /* THDLgBeta-36.otf */,
-				1045E6B72EDE397F00821874 /* THDLgBeta-36Italic.otf */,
-				1045E6B82EDE397F00821874 /* THDLgBeta-37.otf */,
-				1045E6B92EDE397F00821874 /* THDLgBeta-37Italic.otf */,
-				1045E6BA2EDE397F00821874 /* THDLgBeta-38.otf */,
-				1045E6BB2EDE397F00821874 /* THDLgBeta-38Italic.otf */,
-				1045E6BC2EDE397F00821874 /* THDLgBeta-39.otf */,
-				1045E6BD2EDE397F00821874 /* THDLgBeta-39Italic.otf */,
-				1045E6BE2EDE397F00821874 /* THDLgBeta-43.otf */,
-				1045E6BF2EDE397F00821874 /* THDLgBeta-43Italic.otf */,
-				1045E6C02EDE397F00821874 /* THDLgBeta-44.otf */,
-				1045E6C12EDE397F00821874 /* THDLgBeta-44Italic.otf */,
-				1045E6C22EDE397F00821874 /* THDLgBeta-45.otf */,
-				1045E6C32EDE397F00821874 /* THDLgBeta-45Italic.otf */,
-				1045E6C42EDE397F00821874 /* THDLgBeta-46.otf */,
-				1045E6C52EDE397F00821874 /* THDLgBeta-46Italic.otf */,
-				1045E6C62EDE397F00821874 /* THDLgBeta-47.otf */,
-				1045E6C72EDE397F00821874 /* THDLgBeta-47Italic.otf */,
-				1045E6C82EDE397F00821874 /* THDLgBeta-48.otf */,
-				1045E6C92EDE397F00821874 /* THDLgBeta-48Italic.otf */,
-				1045E6CA2EDE397F00821874 /* THDLgBeta-49.otf */,
-				1045E6CB2EDE397F00821874 /* THDLgBeta-49Italic.otf */,
-				1045E6CC2EDE397F00821874 /* THDLgBeta-53.otf */,
-				1045E6CD2EDE397F00821874 /* THDLgBeta-53Italic.otf */,
-				1045E6CE2EDE397F00821874 /* THDLgBeta-54.otf */,
-				1045E6CF2EDE397F00821874 /* THDLgBeta-54Italic.otf */,
-				1045E6D02EDE397F00821874 /* THDLgBeta-55.otf */,
-				1045E6D12EDE397F00821874 /* THDLgBeta-55Italic.otf */,
-				1045E6D22EDE397F00821874 /* THDLgBeta-56.otf */,
-				1045E6D32EDE397F00821874 /* THDLgBeta-56Italic.otf */,
-				1045E6D42EDE397F00821874 /* THDLgBeta-57.otf */,
-				1045E6D52EDE397F00821874 /* THDLgBeta-57Italic.otf */,
-				1045E6D62EDE397F00821874 /* THDLgBeta-58.otf */,
-				1045E6D72EDE397F00821874 /* THDLgBeta-58Italic.otf */,
-				1045E6D82EDE397F00821874 /* THDLgBeta-59.otf */,
-				1045E6D92EDE397F00821874 /* THDLgBeta-59Italic.otf */,
-			);
-			path = "THD Lg Beta_otf";
-			sourceTree = "<group>";
-		};
-		1045E6E92EDE397F00821874 /* THD Sm Beta_otf */ = {
-			isa = PBXGroup;
-			children = (
-				1045E6DB2EDE397F00821874 /* THDSmBeta-Black.otf */,
-				1045E6DC2EDE397F00821874 /* THDSmBeta-BlackItalic.otf */,
-				1045E6DD2EDE397F00821874 /* THDSmBeta-Bold.otf */,
-				1045E6DE2EDE397F00821874 /* THDSmBeta-BoldItalic.otf */,
-				1045E6DF2EDE397F00821874 /* THDSmBeta-ExtraBold.otf */,
-				1045E6E02EDE397F00821874 /* THDSmBeta-ExtraBoldItalic.otf */,
-				1045E6E12EDE397F00821874 /* THDSmBeta-Italic.otf */,
-				1045E6E22EDE397F00821874 /* THDSmBeta-Light.otf */,
-				1045E6E32EDE397F00821874 /* THDSmBeta-LightItalic.otf */,
-				1045E6E42EDE397F00821874 /* THDSmBeta-Medium.otf */,
-				1045E6E52EDE397F00821874 /* THDSmBeta-MediumItalic.otf */,
-				1045E6E62EDE397F00821874 /* THDSmBeta-Regular.otf */,
-				1045E6E72EDE397F00821874 /* THDSmBeta-SemiBold.otf */,
-				1045E6E82EDE397F00821874 /* THDSmBeta-SemiBoldItalic.otf */,
-			);
-			path = "THD Sm Beta_otf";
-			sourceTree = "<group>";
-		};
 		AD4DF3502EDA38FD006398D3 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +212,7 @@
 		E9B0C8D2291ABC1200D34F41 /* LiquidGlassSandbox */ = {
 			isa = PBXGroup;
 			children = (
+				1045E7362EDE3D3C00821874 /* Info.plist */,
 				E9B0C8B1291ABC1200D34F01 /* LiquidGlassSandboxApp.swift */,
 				E9B0C8D6291ABC1200D34F45 /* Views */,
 				E9B0C8D7291ABC1200D34F46 /* DesignSystem */,
@@ -503,6 +289,8 @@
 				1058794C2ED507D000B00087 /* IMPLEMENTATION_SUMMARY.md */,
 				1058794E2ED5082D00B00087 /* QUICK_REFERENCE.md */,
 				10F8C0792ED60909004ECA3E /* THEME_MODE_IMPLEMENTATION.md */,
+				1045E73B2EDE42D200821874 /* FONT_WEIGHTS_EXPLAINED.md */,
+				1045E73D2EDE42FD00821874 /* FontWeightsDiagnosticView.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -511,8 +299,8 @@
 			isa = PBXGroup;
 			children = (
 				E9B0C8BD291ABC1200D34F0D /* Assets.xcassets */,
-				1045E6DA2EDE397F00821874 /* THD Lg Beta_otf */,
-				1045E6E92EDE397F00821874 /* THD Sm Beta_otf */,
+				1045E7372EDE404F00821874 /* THD LgVar Beta.ttf */,
+				1045E7382EDE404F00821874 /* THD SmVar Beta.ttf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -623,81 +411,14 @@
 			files = (
 				1058794F2ED5082D00B00087 /* QUICK_REFERENCE.md in Resources */,
 				10F8C0762ED602AA004ECA3E /* QUICK_START_FIX.md in Resources */,
+				1045E73C2EDE42D200821874 /* FONT_WEIGHTS_EXPLAINED.md in Resources */,
 				1045E69D2EDE38D200821874 /* FONT_LOADING_FIX.md in Resources */,
 				1058794B2ED5077600B00087 /* FONT_SETUP_INSTRUCTIONS.md in Resources */,
 				10F8C07A2ED60909004ECA3E /* THEME_MODE_IMPLEMENTATION.md in Resources */,
-				1045E6EA2EDE397F00821874 /* THDLgBeta-24Italic.otf in Resources */,
-				1045E6EB2EDE397F00821874 /* THDSmBeta-Italic.otf in Resources */,
-				1045E6EC2EDE397F00821874 /* THDLgBeta-36Italic.otf in Resources */,
-				1045E6ED2EDE397F00821874 /* THDLgBeta-59Italic.otf in Resources */,
-				1045E6EE2EDE397F00821874 /* THDSmBeta-LightItalic.otf in Resources */,
-				1045E6EF2EDE397F00821874 /* THDLgBeta-44.otf in Resources */,
-				1045E6F02EDE397F00821874 /* THDLgBeta-29Italic.otf in Resources */,
-				1045E6F12EDE397F00821874 /* THDLgBeta-26Italic.otf in Resources */,
-				1045E6F22EDE397F00821874 /* THDLgBeta-49Italic.otf in Resources */,
-				1045E6F32EDE397F00821874 /* THDLgBeta-58.otf in Resources */,
-				1045E6F42EDE397F00821874 /* THDLgBeta-45.otf in Resources */,
-				1045E6F52EDE397F00821874 /* THDLgBeta-36.otf in Resources */,
-				1045E6F62EDE397F00821874 /* THDLgBeta-37.otf in Resources */,
-				1045E6F72EDE397F00821874 /* THDSmBeta-Bold.otf in Resources */,
-				1045E6F82EDE397F00821874 /* THDSmBeta-Regular.otf in Resources */,
-				1045E6F92EDE397F00821874 /* THDLgBeta-57.otf in Resources */,
-				1045E6FA2EDE397F00821874 /* THDLgBeta-54.otf in Resources */,
-				1045E6FB2EDE397F00821874 /* THDLgBeta-25Italic.otf in Resources */,
-				1045E6FC2EDE397F00821874 /* THDLgBeta-43.otf in Resources */,
-				1045E6FD2EDE397F00821874 /* THDLgBeta-33Italic.otf in Resources */,
-				1045E6FE2EDE397F00821874 /* THDLgBeta-39.otf in Resources */,
-				1045E6FF2EDE397F00821874 /* THDLgBeta-47Italic.otf in Resources */,
-				1045E7002EDE397F00821874 /* THDLgBeta-38.otf in Resources */,
-				1045E7012EDE397F00821874 /* THDLgBeta-46Italic.otf in Resources */,
-				1045E7022EDE397F00821874 /* THDLgBeta-54Italic.otf in Resources */,
-				1045E7032EDE397F00821874 /* THDLgBeta-43Italic.otf in Resources */,
-				1045E7042EDE397F00821874 /* THDSmBeta-BlackItalic.otf in Resources */,
-				1045E7052EDE397F00821874 /* THDSmBeta-ExtraBoldItalic.otf in Resources */,
-				1045E7062EDE397F00821874 /* THDLgBeta-33.otf in Resources */,
-				1045E7072EDE397F00821874 /* THDLgBeta-49.otf in Resources */,
-				1045E7082EDE397F00821874 /* THDLgBeta-57Italic.otf in Resources */,
-				1045E7092EDE397F00821874 /* THDLgBeta-37Italic.otf in Resources */,
-				1045E70A2EDE397F00821874 /* THDLgBeta-44Italic.otf in Resources */,
-				1045E70B2EDE397F00821874 /* THDLgBeta-55Italic.otf in Resources */,
-				1045E70C2EDE397F00821874 /* THDLgBeta-48Italic.otf in Resources */,
-				1045E70D2EDE397F00821874 /* THDLgBeta-45Italic.otf in Resources */,
-				1045E70E2EDE397F00821874 /* THDLgBeta-58Italic.otf in Resources */,
-				1045E70F2EDE397F00821874 /* THDLgBeta-48.otf in Resources */,
-				1045E7102EDE397F00821874 /* THDSmBeta-Black.otf in Resources */,
-				1045E7112EDE397F00821874 /* THDLgBeta-23.otf in Resources */,
-				1045E7122EDE397F00821874 /* THDSmBeta-SemiBold.otf in Resources */,
-				1045E7132EDE397F00821874 /* THDLgBeta-59.otf in Resources */,
-				1045E7142EDE397F00821874 /* THDLgBeta-34.otf in Resources */,
-				1045E7152EDE397F00821874 /* THDLgBeta-27.otf in Resources */,
-				1045E7162EDE397F00821874 /* THDLgBeta-56Italic.otf in Resources */,
-				1045E7172EDE397F00821874 /* THDLgBeta-47.otf in Resources */,
-				1045E7182EDE397F00821874 /* THDLgBeta-39Italic.otf in Resources */,
 				1045E7312EDE3A1900821874 /* FONTS_IN_RESOURCES_SETUP.md in Resources */,
-				1045E7192EDE397F00821874 /* THDLgBeta-56.otf in Resources */,
-				1045E71A2EDE397F00821874 /* THDLgBeta-28.otf in Resources */,
-				1045E71B2EDE397F00821874 /* THDLgBeta-23Italic.otf in Resources */,
-				1045E71C2EDE397F00821874 /* THDLgBeta-28Italic.otf in Resources */,
-				1045E71D2EDE397F00821874 /* THDLgBeta-29.otf in Resources */,
-				1045E71E2EDE397F00821874 /* THDLgBeta-53.otf in Resources */,
-				1045E71F2EDE397F00821874 /* THDSmBeta-SemiBoldItalic.otf in Resources */,
-				1045E7202EDE397F00821874 /* THDLgBeta-34Italic.otf in Resources */,
-				1045E7212EDE397F00821874 /* THDSmBeta-MediumItalic.otf in Resources */,
-				1045E7222EDE397F00821874 /* THDSmBeta-Light.otf in Resources */,
-				1045E7232EDE397F00821874 /* THDLgBeta-35.otf in Resources */,
-				1045E7242EDE397F00821874 /* THDLgBeta-26.otf in Resources */,
-				1045E7252EDE397F00821874 /* THDLgBeta-46.otf in Resources */,
-				1045E7262EDE397F00821874 /* THDSmBeta-ExtraBold.otf in Resources */,
-				1045E7272EDE397F00821874 /* THDLgBeta-53Italic.otf in Resources */,
-				1045E7282EDE397F00821874 /* THDLgBeta-35Italic.otf in Resources */,
-				1045E7292EDE397F00821874 /* THDSmBeta-Medium.otf in Resources */,
-				1045E72A2EDE397F00821874 /* THDLgBeta-55.otf in Resources */,
-				1045E72B2EDE397F00821874 /* THDSmBeta-BoldItalic.otf in Resources */,
-				1045E72C2EDE397F00821874 /* THDLgBeta-38Italic.otf in Resources */,
-				1045E72D2EDE397F00821874 /* THDLgBeta-24.otf in Resources */,
-				1045E72E2EDE397F00821874 /* THDLgBeta-25.otf in Resources */,
-				1045E72F2EDE397F00821874 /* THDLgBeta-27Italic.otf in Resources */,
 				1058794D2ED507D000B00087 /* IMPLEMENTATION_SUMMARY.md in Resources */,
+				1045E7392EDE404F00821874 /* THD SmVar Beta.ttf in Resources */,
+				1045E73A2EDE404F00821874 /* THD LgVar Beta.ttf in Resources */,
 				10F8C0702ED60161004ECA3E /* TARGET_MEMBERSHIP_FIX.md in Resources */,
 				1045E7332EDE3A3400821874 /* FONT_CONFIG_REFERENCE.md in Resources */,
 				1045E6A12EDE390900821874 /* FONT_FIX_CHECKLIST.md in Resources */,
@@ -742,6 +463,7 @@
 				1045E69A2EDE2FB200821874 /* ProductCard.swift in Sources */,
 				1045E69B2EDE2FB200821874 /* ProductListingPage.swift in Sources */,
 				10D5416E2EDE1F0C003466A0 /* button.swift in Sources */,
+				1045E73E2EDE42FD00821874 /* FontWeightsDiagnosticView.swift in Sources */,
 				E9B0C8A5291ABC1200D34F05 /* DynamicBlurView.swift in Sources */,
 				AD13E9152EDBC26A00998EEA /* SearchSheet.swift in Sources */,
 				E9B0C8A6291ABC1200D34F06 /* InteractiveGlassView.swift in Sources */,
@@ -803,6 +525,8 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiquidGlassSandbox/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -814,6 +538,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -832,6 +557,8 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiquidGlassSandbox/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -843,6 +570,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

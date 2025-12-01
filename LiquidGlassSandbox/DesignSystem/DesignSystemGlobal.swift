@@ -223,7 +223,7 @@ public struct DesignSystemGlobal {
     public static let FontFontSizeHero3 = CGFloat(48)
     public static let FontFontSizeHero4 = CGFloat(40)
     public static let FontFontSizeHero5 = CGFloat(36)
-    public static let FontFontWeightBodyBold = "Bold"
+    public static let FontFontWeightBodyBold = "800"
     public static let FontFontWeightBodyLight = "Light"
     public static let FontFontWeightBodyMedium = "Medium"
     public static let FontFontWeightBodyRegular = "Regular"
